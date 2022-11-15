@@ -1,4 +1,4 @@
-# [Nome do projeto]
+# Trabalho Prático de Teoria dos Grafos
 
 [Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.]
 
