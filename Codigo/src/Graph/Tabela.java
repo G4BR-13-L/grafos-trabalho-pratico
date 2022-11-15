@@ -1,7 +1,4 @@
-package Codigo.Graph;
-
-import java.util.ArrayList;
-import java.util.List;
+package Codigo.src.Graph;
 
 public class Tabela {
 

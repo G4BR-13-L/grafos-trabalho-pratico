@@ -1,10 +1,11 @@
-package Codigo.GraphIO;
+package Codigo.src.GraphIO;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import Codigo.Graph.Graph;
+import Codigo.src.Graph.Graph;
+
 
 public class GraphIO {
     public GraphIO() {
@@ -12,12 +13,16 @@ public class GraphIO {
     }
 
     public static Graph readGraph(String filepath) throws FileNotFoundException {
+        if( filepath == "" ){
+            filepath = "Codigo/src/GraphIO/grafo_teste.pajek";
+        }
         String str_vertices;        
         String str_arestas;        
         int vertices = 0 ;
         int arestas = 0 ;
         Graph graph;
-        File file = new File("./Codigo/Instancias/" + filepath);
+        System.out.println(filepath);
+        File file = new File(filepath);
         Scanner sc = new Scanner(file);
 
         // Leitura das 2 primeiras linhas: *Vertices e *Edges

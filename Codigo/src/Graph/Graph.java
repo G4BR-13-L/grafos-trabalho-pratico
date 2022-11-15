@@ -1,12 +1,4 @@
-package Codigo.Graph;
-
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+package Codigo.src.Graph;
 
 public class Graph {
     public int[][] matrix;
@@ -26,6 +18,18 @@ public class Graph {
                     this.matrix[i][j] = 0;
             }
         }
+    }
+
+    public int getNumeroDeArestas(){
+        int n_arestas = 0;
+        for( int i = 0; i < this.n_vertices ; i++ ){
+            for( int j = 0; j < this.n_vertices ; j++ ){
+                if( this.matrix[i][j] > 0 ){
+                    n_arestas++;
+                }
+            }   
+        }
+        return n_arestas;
     }
 
     
