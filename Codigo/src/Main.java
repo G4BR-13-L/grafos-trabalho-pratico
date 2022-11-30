@@ -12,6 +12,7 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
         graph = GraphIO.readGraph("");
+        graph.GerarListaDeAdjacencia();
         System.out.println(graph.toString());
     }
 }
