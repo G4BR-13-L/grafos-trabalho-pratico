@@ -2,10 +2,8 @@ package Codigo.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Nested;
 
 import Codigo.src.Graph.Graph;
 
@@ -18,8 +16,25 @@ public class GraphTest {
         grafo = new Graph(10);
     }
 
+    class VerticeMatrizTeste {
+        @Test
+        public void QuantidadeDeVertices() {
+            grafo = new Graph(10);
+            assertEquals(10, grafo.getQuantidadeVerticesNaMatriz());
+        }
+    }
 
-    class VerticeTest {
+    class ArestasMatrizTeste {
+        @Test
+        public void QuantidadeDeArestas() {
+            grafo.addAresta(1, 9);
+            grafo.addAresta(2, 8);
+            assertEquals(2, grafo.getQuantidadeDeArestasNaMatriz());
+
+        }
+    }
+
+    class VerticeAdjacenciaTest {
         @Test
         public void QuantidadeDeVertices() {
             grafo = new Graph(10);
@@ -27,8 +42,7 @@ public class GraphTest {
         }
     }
 
-    class ArestasTest {
-
+    class ArestasAdjacenciaTest {
         @Test
         public void AdicaoDeAresta() {
             grafo.addAresta(1, 9);
@@ -43,11 +57,12 @@ public class GraphTest {
         }
 
         @Test
-        public void QuantidadeDeArestas(){
+        public void QuantidadeDeArestas() {
             grafo.addAresta(1, 9);
             grafo.addAresta(2, 8);
             assertEquals(2, grafo.getQuantidadeArestas());
 
         }
     }
+
 }

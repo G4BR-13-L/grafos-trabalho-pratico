@@ -25,6 +25,6 @@ public class GraphIOTest {
     public void testeDeLeituraDeGrafos() throws FileNotFoundException{
         Graph g = GraphIO.readGraph("grafo_teste.pajek");
         assertEquals(9, g.n_vertices);
-        assertEquals(12, g.getNumeroDeArestasNaMatrix());
+        assertEquals(12, g.getQuantidadeDeArestasNaMatriz());
     }
 }

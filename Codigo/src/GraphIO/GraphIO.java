@@ -43,7 +43,7 @@ public class GraphIO {
         //------------------------------------------------------------------------
 
         //Novo grafo
-        graph = new Graph(true, vertices);
+        graph = new Graph(vertices);
 
         //Adicionando valores a matrix de adjacencia do grafo
         while (sc.hasNext()) {
