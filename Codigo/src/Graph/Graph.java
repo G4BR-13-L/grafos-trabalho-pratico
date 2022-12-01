@@ -216,10 +216,23 @@ public class Graph {
         return str;
     }
 
+
+    /**
+     * Retorna a quantidade de vertices da lista de adjacencia
+     * @return
+     */
     public int getQuantidadeVertices(){ 
-        return this.n_vertices; 
+        return this.vertices.size(); 
     }
 
+    /**
+     * Retorna a quantidade de arestas da lista de adjacencia
+     * 
+     * OBS: Como é um grafo não direcionado, a relação dos vertices existe
+     * nas duas direções. Por isso dividimos a conta por 2 
+     * na hora no retorno
+     * @return
+     */
     public int getQuantidadeArestas(){ 
         int qtdArestas = 0;
         for ( int i = 0 ; i < this.vertices.size() ; i++ ){
