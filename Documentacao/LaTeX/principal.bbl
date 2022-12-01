@@ -1,0 +1,103 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v<VERSION> }
+
+\bibitem[Antoniol et al. 2004]{congresso}
+\abntrefinfo{Antoniol et al.}{ANTONIOL et al.}{2004}
+{ANTONIOL, G.; PENTA, M. Di; HARMAN, M. A robust search-based approach to
+  project management in the presence of abandonment, rework, error and
+  uncertainty. In:  INTERNATIONAL SYMPOSIUM ON SOFTWARE METRICS, 10, 2004, New
+  York. \textbf{Proceedings...} Washington: IEEE Computer Society, 2004. v.~1,
+  n.~1, p. 172--183.}
+
+\bibitem[Cordeiro 2010]{monog-fabio}
+\abntrefinfo{Cordeiro}{CORDEIRO}{2010}
+{CORDEIRO, Fábio Leandro~Rodrigues.
+\textbf{Estudo comparativo entre plataforma monoprocessada e clustercomputing
+  sobre as métricas de desempenho}.
+2010. 46\hspace{-0.1cm}~f. Monografia (Conclusão de curso) --- Pontifícia
+  Universidade Católica de Minas Gerais, Guanhães.}
+
+\bibitem[Dovzan et al. 2012]{dovzan:01}
+\abntrefinfo{Dovzan et al.}{DOVZAN et al.}{2012}
+{DOVZAN, Dejan; LOGAR, Vito; SKRJANC, Igor. Solving the sales prediction
+  problem with fuzzy evolving methods. In:  IEEE CONGRESS ON EVOLUTIONARY
+  COMPUTATION, 1, 2012, Brisbane. \textbf{Proccedings...} Washington: IEEE,
+  2012.}
+
+\bibitem[Engenharia de Sistemas de Conhecimento 2013]{tela1}
+\abntrefinfo{Engenharia de Sistemas de Conhecimento}{ENGENHARIA DE SISTEMAS DE
+  CONHECIMENTO}{2013}
+{ENGENHARIA DE SISTEMAS DE CONHECIMENTO. \textbf{(ESC) Eletrocad m\'odulo
+  altimetria. Vers\~ao 1}. [S.l.]: Engenharia de Sistemas de Conhecimento,
+  2013.}
+
+\bibitem[EXODO]{biblia}
+\abntrefinfo{EXODO}{EXODO}{}
+{EXODO.
+In:  A B\'IBLIA:. traduç\~ao ecum\^enica. S\~ao Paulo: Paulinas, 2002.}
+
+\bibitem[G\'oes 2012]{tese}
+\abntrefinfo{G\'oes}{G\'OES}{2012}
+{G\'OES, Lu\'is Fabr\'icio~Wanderley.
+\textbf{Automatic Skeleton-Driven performance optimizations for transactional
+  memory}.
+2012. Tese (Doutorado) --- The University of Edinburgh, Edinburgh.}
+
+\bibitem[G\'oes et al. 2005]{cap-livro}
+\abntrefinfo{G\'oes et al.}{G\'OES et al.}{2005}
+{G\'OES, L. F.~W. et al. Computaç\~ao em grade: Conceitos, tecnologias,
+  aplicações e tend\^encias.
+In:  L. F. W. G\'OES. \textbf{Escola Regional de Inform\'atica de Minas
+  Gerais}. Belo Horizonte: ERI MG, 2005. cap.~11, p.~40.}
+
+\bibitem[Gropp 2003]{groupp}
+\abntrefinfo{Gropp}{GROPP}{2003}
+{GROPP, W. \textbf{Beowulf cluster computing with linux}. 2. ed. Cambridge: MIT
+  Press, 2003. 618~p.}
+
+\bibitem[Habermas 1997]{habermas}
+\abntrefinfo{Habermas}{HABERMAS}{1997}
+{HABERMAS, Jürgen. Trabalho e interação: notas sobre a filosofia do
+  esp\'irito de \uppercase{H}egel em \uppercase{I}ena.
+In:  HABERMAS, J. TESTANDO. \textbf{T\'ecnica e ci\^encia como "ideologia"}.
+  Lisboa: Ed. 70, 1997. p. 163--211.}
+
+\bibitem[Knuth 1968]{knuth}
+\abntrefinfo{Knuth}{KNUTH}{1968}
+{KNUTH, D.~E. \textbf{The art of computer programming}. 16. ed. [S.l.]:
+  Addison-Wesley, 1968. Fundamental Algorithms.}
+
+\bibitem[Pontif\'icia Universidade Cat\'olica de Minas Gerais 2012]{manualpuc}
+\abntrefinfo{Pontif\'icia Universidade Cat\'olica de Minas Gerais}{PONTIF\'ICIA
+  UNIVERSIDADE CAT\'OLICA DE MINAS GERAIS}{2012}
+{PONTIF\'ICIA UNIVERSIDADE CAT\'OLICA DE MINAS GERAIS. \textbf{Padrão PUC
+  Minas de Normalizaç\~ao}: normas da \uppercase{ABNT} para apresentaç\~ao de
+  teses, dissertaç\~oes, monografias e trabalhos acad\^emicos. 9. ed. rev.
+  ampl. atual. Belo Horizonte: PUC Minas, 2012. Disponível em:
+  <http://www.pucminas.br/biblioteca/>. Acesso em: 6 de set. 2013.}
+
+\bibitem[Project Management Institute 2004]{pmbok}
+\abntrefinfo{Project Management Institute}{PROJECT MANAGEMENT INSTITUTE}{2004}
+{PROJECT MANAGEMENT INSTITUTE. \textbf{A Guide to the project management body
+  of knowledge (PMBOK guides)}. Pennsylvania: Project Management, 2004.}
+
+\bibitem[Ribeiro 2010]{mestrado}
+\abntrefinfo{Ribeiro}{RIBEIRO}{2010}
+{RIBEIRO, Anna Izabel João~Tostes.
+\textbf{Representações neural e fuzzy de controle de admissão de chamadas
+  para redes {E-UMTS}}.
+2010. Dissertação (Mestrado) --- Pontifícia Universidade Católica de Minas
+  Gerais, Programa de Pós-graduação em Informática, Belo Horizonte.}
+
+\bibitem[Teixeira e Laforga 1995]{artigo01}
+\abntrefinfo{Teixeira e Laforga}{TEIXEIRA; LAFORGA}{1995}
+{TEIXEIRA, Edilberto~P.; LAFORGA, Gilson. An analysis of some neuro-fuzzy
+  approaches for the control of nonlinear systems.
+\textbf{Ci\^encia \& Engenharia}, Uberl\^andia, v.~4, n.~1, p. 7--12, jan./jun.
+  1995.}
+
+\end{thebibliography}
