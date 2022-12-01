@@ -22,8 +22,8 @@ public class Graph {
      */
     public Graph(int n_vertices) {
         this.n_vertices = n_vertices;
-        this.GerarListaDeAdjacencia();
         this.ROTULOS = n_vertices;
+        this.GerarListaDeAdjacencia();
     }
 
     /**
@@ -214,5 +214,17 @@ public class Graph {
                     this.vertices.get(i).arestasToString());
         }
         return str;
+    }
+
+    public int getQuantidadeVertices(){ 
+        return this.n_vertices; 
+    }
+
+    public int getQuantidadeArestas(){ 
+        int qtdArestas = 0;
+        for ( int i = 0 ; i < this.vertices.size() ; i++ ){
+            qtdArestas += this.vertices.get(i).arestas.size();
+        }
+        return qtdArestas / 2;
     }
 }
