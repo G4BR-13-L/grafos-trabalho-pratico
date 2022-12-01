@@ -1,0 +1,43 @@
+@startuml Diagrama de Classe
+
+
+class GraphMatrix{
+    + int[][] matrix
+    + int n_vertices
+    + GraphMatrix(int n_vertices)
+    - preencherMatrizComZeros():void
+    + getQuantidadeDeArestasNaMatriz():int
+    + existeVerticeNaMatriz(int v_find):boolean
+    + existeArestNaMatriz(int v_origem, int v_destino):boolean
+    + getQuantidadeVerticesNaMatriz():int
+    + getQuantidadeArestas():int
+    + addArestaNaMatriz(int v_origem, int v_destino):void
+    + rmArestaDaMatriz(int v_origem, int v_destino):void
+}
+
+class Graph{
+    + n_vertices: int 
+    + vertices: List<Vertice> 
+    + arestas: List<Aresta> 
+    + ROTULOS_VERTICE: int  = 0
+    + ROTULOS_ARESTA: int  = 0
+    + Graph(int n_vertices)
+    + void GerarListaDeAdjacencia()
+    + void GerarListaDeAdjacenciaAPartirDaMatriz() 
+    - boolean existeVertice(int v_find)
+    + boolean existeAresta(int v_origem, int v_destino)
+    + void addAresta(int v_origem, int v_destino) 
+    + void rmAresta(int v_origem, int v_destino)
+    + String toString() 
+    + int getQuantidadeArestas()
+    + int getQuantidadeVertices()
+}
+
+class GraphDinamic{
+
+}
+
+GraphMatrix <|-- Graph
+Graph <|-- GraphDinamic
+
+@enduml
