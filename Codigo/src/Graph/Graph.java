@@ -10,13 +10,24 @@ public class Graph {
     public int n_vertices;
     public List<Vertice> vertices;
 
-    public Graph(int n_vertices) {
+    public Graph(boolean isMatrix, int n_vertices) {
         this.n_vertices = n_vertices;
         this.matrix = new int[n_vertices][n_vertices];
-        this.preencherComZeros();
+        this.preencherMatrizComZeros();
+    }
+    public Graph(int n_vertices) {
+        this.n_vertices = n_vertices;
+        this.GerarListaDeAdjacencia();
     }
     
     public void GerarListaDeAdjacencia(){
+        List<Vertice> v = new ArrayList<>();
+        for ( int i = 0 ; i < n_vertices ; i++ ){
+            v.add(new Vertice(i));
+        }
+        this.vertices = v;
+    }
+    public void GerarListaDeAdjacenciaAPartirDaMatriz(){
         List<Vertice> v = new ArrayList<>();
         for ( int i = 0 ; i < n_vertices ; i++ ){
             v.add(new Vertice(i));
@@ -33,7 +44,7 @@ public class Graph {
         this.vertices = v;
     }
 
-    private void preencherComZeros() {
+    private void preencherMatrizComZeros() {
         for (int i = 0; i < n_vertices; i++) {
             for (int j = 0; j < n_vertices; j++) {
                     this.matrix[i][j] = 0;

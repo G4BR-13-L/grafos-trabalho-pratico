@@ -15,24 +15,34 @@ import Codigo.src.GraphIO.GraphIO;
  * * • Representação de grafos utilizando Lista de adjacência
  * 
  * * MANIPULAÇÃO
- * * Funções básicas para manipulação de grafos em ambas representa ̧c ̃oes, incluindo:
- * * • Criação de um grafo com X v ́ertices (o n ́umero de v ́ertices deve ser inserido pelo usu ́ario)
- * * • Criação e remo ̧c ̃ao de arestas
- * * • Ponderação e rotulação de v ́ertices
- * * • Ponderação e rotulação de arestas
- * * • Checagem de adjacência entre v ́ertices
- * * • Checagem de adjacência entre arestas
- * * • Checagem da adjacência de arestas
- * * • Checagem da quantidade de v ́ertices e arestas
- * * • Checagem de grafo vazio e completo
+ * * Funções básicas para manipulação de grafos em ambas representações, incluindo:
+ * * Gabriel - [ ✅ ] Criação de um grafo com X v ́ertices (o n ́umero de v ́ertices deve ser inserido pelo usu ́ario)
+ * * [ ❌ ] Criação e remoção de arestas
+ * * [ ❌ ] Ponderação e rotulação de v ́ertices
+ * * [ ❌ ] Ponderação e rotulação de arestas
+ * * [ ❌ ] Checagem de adjacência entre v ́ertices
+ * * [ ❌ ] Checagem de adjacência entre arestas
+ * * [ ❌ ] Checagem da adjacência de arestas
+ * * [ ❌ ] Checagem da quantidade de v ́ertices e arestas
+ * * [ ❌ ] Checagem de grafo vazio e completo
  */
 public class Main {
-    public static Graph graph;
+    public static Graph graph1;
+    public static Graph graph2;
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        graph = GraphIO.readGraph("Codigo/src/GraphIO/grafo_teste.pajek");
-        graph.GerarListaDeAdjacencia();
-        System.out.println(graph.toString());
+        graph1 = GraphIO.readGraph("Codigo/src/GraphIO/grafo_teste.pajek");
+        graph1.GerarListaDeAdjacenciaAPartirDaMatriz();
+        System.out.println(graph1.toString());
+
+
+        System.out.println("\n\n===");
+
+
+        graph2 = new Graph( 20);
+        System.out.println(graph2.toString());
+
+
     }
 }
