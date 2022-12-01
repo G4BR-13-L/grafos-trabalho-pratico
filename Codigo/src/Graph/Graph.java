@@ -9,8 +9,10 @@ public class Graph {
     public int[][] matrix;
     public int n_vertices;
     public List<Vertice> vertices;
+    public List<Aresta> arestas;
 
-    public int ROTULOS = 0;
+    public int ROTULOS_VERTICE = 0;
+    public int ROTULOS_ARESTA = 0;
 
     /**
      * Construtor padrão que cria um grafo em estrutura de lista
@@ -22,8 +24,9 @@ public class Graph {
      */
     public Graph(int n_vertices) {
         this.n_vertices = n_vertices;
-        this.ROTULOS = n_vertices;
+        this.ROTULOS_VERTICE = n_vertices;
         this.GerarListaDeAdjacencia();
+        this.arestas = new ArrayList<>();
     }
 
     /**
@@ -42,6 +45,7 @@ public class Graph {
     public Graph(boolean isMatrix, int n_vertices) {
         this.n_vertices = n_vertices;
         this.matrix = new int[n_vertices][n_vertices];
+        this.arestas = new ArrayList<>();
         this.preencherMatrizComZeros();
     }
 
@@ -127,12 +131,27 @@ public class Graph {
         return false;
     }
 
+
+    /**
+     * Verifica a existencia de uma aresta nas listas de adjacencia e 
+     * na lista de arestas. O Retorno é true caso a aresta 
+     * exista em abas as listas
+     * @param v_origem
+     * @param v_destino
+     * @return true || false
+     */
     public boolean existeAresta(int v_origem, int v_destino){
         for (int i = 0; i < this.vertices.size(); i++) {
             if (this.vertices.get(i).rotulo == v_origem) {
                 for ( int j = 0 ; j < this.vertices.get(i).arestas.size() ; j++ ){
                     if(this.vertices.get(i).arestas.get(j).rotulo == v_destino){
-                        return true;
+                        for( int k = 0 ; k < this.arestas.size() ; k++ ){
+                            if( (this.arestas.get(k).rotuloVerticeV == v_origem && this.arestas.get(k).rotuloVerticeW == v_destino ) ||
+                            (this.arestas.get(k).rotuloVerticeW == v_origem && this.arestas.get(k).rotuloVerticeV == v_destino )
+                            ){
+                                return true;
+                            }
+                        }
                     }
                 }
             }
@@ -152,6 +171,8 @@ public class Graph {
         if (existeVertice(v_origem) && existeVertice(v_destino)) {
             this.vertices.get(v_origem).addAresta(this.vertices.get(v_destino));
             this.vertices.get(v_destino).addAresta(this.vertices.get(v_origem));
+            this.arestas.add(new Aresta(this.ROTULOS_ARESTA, v_origem, v_destino));
+            this.ROTULOS_ARESTA++;
         } else {
             System.out.println("ERRO: A Aresta não pode ser inserida porque um dos vertices não existe");
         }
@@ -176,6 +197,7 @@ public class Graph {
                         }
                     }
                 }
+
                 for (int i = 0; i < this.vertices.size(); i++) {
                     if (this.vertices.get(i).rotulo == v_destino) {
                         for ( int w = 0 ; w < this.vertices.get(i).arestas.size() ; w++ ){
@@ -183,6 +205,14 @@ public class Graph {
                                 this.vertices.get(i).arestas.remove(w);
                             }
                         }
+                    }
+                }
+
+                for( int i = 0 ; i < this.arestas.size() ; i++ ){
+                    if( (this.arestas.get(i).rotuloVerticeV == v_origem && this.arestas.get(i).rotuloVerticeW == v_destino ) ||
+                    (this.arestas.get(i).rotuloVerticeW == v_origem && this.arestas.get(i).rotuloVerticeV == v_destino )
+                    ){
+                        this.arestas.remove(i);
                     }
                 }
                 
