@@ -10,28 +10,33 @@ public class Graph {
     public int n_vertices;
     public List<Vertice> vertices;
 
+    public int ROTULOS = 0;
+
     /**
      * Construtor padrão que cria um grafo em estrutura de lista
-     * de adjacencia somente com os vertices. Inicialmente 
+     * de adjacencia somente com os vertices. Inicialmente
      * sempre será um grafo totalmente disconexo pois as relações
      * e arestas NÃO são definidas por esse construtor
+     * 
      * @param n_vertices
      */
     public Graph(int n_vertices) {
         this.n_vertices = n_vertices;
         this.GerarListaDeAdjacencia();
+        this.ROTULOS = n_vertices;
     }
 
     /**
-     * Construtor utilizado quando a quantidade de 
-     * vertices é passado pelo GraphIO. Essse construtor gera primeiro 
+     * Construtor utilizado quando a quantidade de
+     * vertices é passado pelo GraphIO. Essse construtor gera primeiro
      * uma matriz de adjacência e depois a preenche com zeros.
-     * Obrigatóriamente, após cramar esse construtor é necessário 
-     * chamar o método @GerarListaDeAdjacenciaAPartirDaMatriz() 
+     * Obrigatóriamente, após cramar esse construtor é necessário
+     * chamar o método @GerarListaDeAdjacenciaAPartirDaMatriz()
      * para gerar uma lista de adjecencia da qual é possivel de ser manipulada.
-     * A matriz de adjacencia no momento serve apenas como 
+     * A matriz de adjacencia no momento serve apenas como
      * instermediário na leitura do grafo
-     * @param isMatrix - Sempre dever ser true
+     * 
+     * @param isMatrix   - Sempre dever ser true
      * @param n_vertices
      */
     public Graph(boolean isMatrix, int n_vertices) {
@@ -39,34 +44,32 @@ public class Graph {
         this.matrix = new int[n_vertices][n_vertices];
         this.preencherMatrizComZeros();
     }
-    
-    
+
     /**
      * Método que gera a lista de adjacencia padrão, com somente
-     * vertices e sem arestas. 
+     * vertices e sem arestas.
      */
-    public void GerarListaDeAdjacencia(){
+    public void GerarListaDeAdjacencia() {
         List<Vertice> v = new ArrayList<>();
-        for ( int i = 0 ; i < n_vertices ; i++ ){
+        for (int i = 0; i < n_vertices; i++) {
             v.add(new Vertice(i));
         }
         this.vertices = v;
     }
 
-     
     /**
-     * Metodo que gera a lista de adjacencia a partir da martiz 
+     * Metodo que gera a lista de adjacencia a partir da martiz
      * produzida na leitura de arquivo
      */
-    public void GerarListaDeAdjacenciaAPartirDaMatriz(){
+    public void GerarListaDeAdjacenciaAPartirDaMatriz() {
         List<Vertice> v = new ArrayList<>();
-        for ( int i = 0 ; i < n_vertices ; i++ ){
+        for (int i = 0; i < n_vertices; i++) {
             v.add(new Vertice(i));
         }
 
-        for( int i = 0 ; i < n_vertices ; i++ ){
-            for( int j = 0 ; j < n_vertices ; j++ ){
-                if( this.matrix[i][j] == 1 ){
+        for (int i = 0; i < n_vertices; i++) {
+            for (int j = 0; j < n_vertices; j++) {
+                if (this.matrix[i][j] == 1) {
                     v.get(i).addAresta(v.get(j));
                 }
             }
@@ -75,55 +78,84 @@ public class Graph {
         this.vertices = v;
     }
 
-
     /**
-     * Método que preence a matriz com zeros no momento 
-     * de instanciação de uma matriz 
+     * Método que preence a matriz com zeros no momento
+     * de instanciação de uma matriz
      */
     private void preencherMatrizComZeros() {
         for (int i = 0; i < n_vertices; i++) {
             for (int j = 0; j < n_vertices; j++) {
-                    this.matrix[i][j] = 0;
+                this.matrix[i][j] = 0;
             }
         }
     }
 
-
     /**
-     * Método que conta a quantidade de arestas na matriz 
-     * de adjacencia do grafo 
+     * Método que conta a quantidade de arestas na matriz
+     * de adjacencia do grafo
+     * 
      * @return n_arestas
      */
-    public int getNumeroDeArestasNaMatrix(){
+    public int getNumeroDeArestasNaMatrix() {
         int n_arestas = 0;
-        for( int i = 0; i < this.n_vertices ; i++ ){
-            for( int j = 0; j < this.n_vertices ; j++ ){
-                if( this.matrix[i][j] > 0 ){
+        for (int i = 0; i < this.n_vertices; i++) {
+            for (int j = 0; j < this.n_vertices; j++) {
+                if (this.matrix[i][j] > 0) {
                     n_arestas++;
                 }
-            }   
+            }
         }
         return n_arestas;
     }
 
+    public void addAresta(int v_origem, int v_destino) {
+
+        if (findVertice(v_origem) && findVertice(v_destino)) {
+            this.vertices.get(v_origem).addAresta(this.vertices.get(v_destino));
+            this.vertices.get(v_destino).addAresta(this.vertices.get(v_origem));
+        }else{
+            System.out.println("ERRO: A Aresta não pode ser inserida porque um dos vertices não existe");
+        }
+
+        
+         
+    }
+
 
     /**
-     * ToString para printar a lista de adjecencia 
-     * de um jeito bem bacana 
+     * Itera pela lista de vertices em busca de um vertice 
+     * especifico tendo o rotulo como parametro.
+     * 
+     * OBS: Espera-se que não existam vertices com o mesmo
+     * rotulo no grafo. Cada vertice é unico
+     * @param v_find
+     * @return true ou false
+     */
+    private boolean findVertice(int v_find) {
+        for (int i = 0; i < this.vertices.size(); i++) {
+            if (this.vertices.get(i).rotulo == v_find) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * ToString para printar a lista de adjecencia
+     * de um jeito bem bacana
      */
     @Override
-    public String toString(){
+    public String toString() {
 
         String headerFormat = "|%1$-10s|%2$-10s\n";
         String lineFormat = "|%1$-10s|%2$s\n";
-        
-        String str = String.format(headerFormat, StringUtils.center("Vertices", 10), StringUtils.center("Arestas",10));
 
-        for ( int i = 0 ; i < vertices.size() ; i++ ){
-            str += String.format(lineFormat, StringUtils.center(this.vertices.get(i).rotulo+"", 10), this.vertices.get(i).arestasToString());
+        String str = String.format(headerFormat, StringUtils.center("Vertices", 10), StringUtils.center("Arestas", 10));
+
+        for (int i = 0; i < vertices.size(); i++) {
+            str += String.format(lineFormat, StringUtils.center(this.vertices.get(i).rotulo + "", 10),
+                    this.vertices.get(i).arestasToString());
         }
         return str;
     }
 }
-
-

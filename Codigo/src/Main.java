@@ -40,10 +40,13 @@ public class Main {
         System.out.println("\n\n===");
 
 
-        graph2 = new Graph( 20);
+        graph2 = new Graph( 10);
         System.out.println(graph2.toString());
 
-        
+        graph2.addAresta(10, 19);
+
+        System.out.println(graph2.toString());
+
 
 
     }
