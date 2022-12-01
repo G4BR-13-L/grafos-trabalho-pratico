@@ -43,6 +43,8 @@ public class Main {
         graph2 = new Graph( 20);
         System.out.println(graph2.toString());
 
+        
+
 
     }
 }
