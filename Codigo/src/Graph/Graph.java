@@ -108,26 +108,30 @@ public class Graph {
         return n_arestas;
     }
 
+    /**
+     * Adiciona aresta ao grafo
+     * OBS: Apesar dos parametros se chamarem origem e destino,
+     * a aresta no final é não-direcionada.
+     * 
+     * @param v_origem  -> Aresta de origem
+     * @param v_destino - Aresta de Destino
+     */
     public void addAresta(int v_origem, int v_destino) {
-
         if (findVertice(v_origem) && findVertice(v_destino)) {
             this.vertices.get(v_origem).addAresta(this.vertices.get(v_destino));
             this.vertices.get(v_destino).addAresta(this.vertices.get(v_origem));
-        }else{
+        } else {
             System.out.println("ERRO: A Aresta não pode ser inserida porque um dos vertices não existe");
         }
-
-        
-         
     }
 
-
     /**
-     * Itera pela lista de vertices em busca de um vertice 
+     * Itera pela lista de vertices em busca de um vertice
      * especifico tendo o rotulo como parametro.
      * 
      * OBS: Espera-se que não existam vertices com o mesmo
      * rotulo no grafo. Cada vertice é unico
+     * 
      * @param v_find
      * @return true ou false
      */
