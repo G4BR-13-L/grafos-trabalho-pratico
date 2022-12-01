@@ -109,23 +109,6 @@ public class Graph {
     }
 
     /**
-     * Adiciona aresta ao grafo
-     * OBS: Apesar dos parametros se chamarem origem e destino,
-     * a aresta no final é não-direcionada.
-     * 
-     * @param v_origem  -> Aresta de origem
-     * @param v_destino - Aresta de Destino
-     */
-    public void addAresta(int v_origem, int v_destino) {
-        if (findVertice(v_origem) && findVertice(v_destino)) {
-            this.vertices.get(v_origem).addAresta(this.vertices.get(v_destino));
-            this.vertices.get(v_destino).addAresta(this.vertices.get(v_origem));
-        } else {
-            System.out.println("ERRO: A Aresta não pode ser inserida porque um dos vertices não existe");
-        }
-    }
-
-    /**
      * Itera pela lista de vertices em busca de um vertice
      * especifico tendo o rotulo como parametro.
      * 
@@ -135,7 +118,7 @@ public class Graph {
      * @param v_find
      * @return true ou false
      */
-    private boolean findVertice(int v_find) {
+    private boolean existeVertice(int v_find) {
         for (int i = 0; i < this.vertices.size(); i++) {
             if (this.vertices.get(i).rotulo == v_find) {
                 return true;
@@ -143,6 +126,76 @@ public class Graph {
         }
         return false;
     }
+
+    public boolean existeAresta(int v_origem, int v_destino){
+        for (int i = 0; i < this.vertices.size(); i++) {
+            if (this.vertices.get(i).rotulo == v_origem) {
+                for ( int j = 0 ; j < this.vertices.get(i).arestas.size() ; j++ ){
+                    if(this.vertices.get(i).arestas.get(j).rotulo == v_destino){
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Adiciona aresta ao grafo
+     * OBS: Apesar dos parametros se chamarem origem e destino,
+     * a aresta no final é não-direcionada.
+     * 
+     * @param v_origem  -> Aresta de origem
+     * @param v_destino - Aresta de Destino
+     */
+    public void addAresta(int v_origem, int v_destino) {
+        if (existeVertice(v_origem) && existeVertice(v_destino)) {
+            this.vertices.get(v_origem).addAresta(this.vertices.get(v_destino));
+            this.vertices.get(v_destino).addAresta(this.vertices.get(v_origem));
+        } else {
+            System.out.println("ERRO: A Aresta não pode ser inserida porque um dos vertices não existe");
+        }
+    }
+
+    /**
+     * Remove a relação bidireciona ( aresta ), de 2 vertices 
+     * passados como parâmetro
+     * @param v_origem
+     * @param v_destino
+     */
+    public void rmAresta(int v_origem, int v_destino){
+        if (existeVertice(v_origem) && existeVertice(v_destino)){
+            if( existeAresta(v_origem, v_destino) && existeAresta(v_destino, v_origem)  ){
+                
+                for (int i = 0; i < this.vertices.size(); i++) {
+                    if (this.vertices.get(i).rotulo == v_origem) {
+                        for ( int v = 0 ; v < this.vertices.get(i).arestas.size() ; v++ ){
+                            if(this.vertices.get(i).arestas.get(v).rotulo == v_destino){
+                                this.vertices.get(i).arestas.remove(v);
+                            }
+                        }
+                    }
+                }
+                for (int i = 0; i < this.vertices.size(); i++) {
+                    if (this.vertices.get(i).rotulo == v_destino) {
+                        for ( int w = 0 ; w < this.vertices.get(i).arestas.size() ; w++ ){
+                            if(this.vertices.get(i).arestas.get(w).rotulo == v_origem){
+                                this.vertices.get(i).arestas.remove(w);
+                            }
+                        }
+                    }
+                }
+                
+                System.out.println("Grafo: aresta removida com sucesso");
+            }else{
+                System.out.println("ERRO: Não existe uma relção de aresta entre os 2 vertices");
+            }
+        }else{
+            System.out.println("ERRO: Um dos vertices, ou ambos, não existe no grafo ");
+        }
+    }
+
+    
 
     /**
      * ToString para printar a lista de adjecencia

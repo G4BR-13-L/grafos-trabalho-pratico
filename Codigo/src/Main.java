@@ -17,7 +17,7 @@ import Codigo.src.GraphIO.GraphIO;
  * * MANIPULAÇÃO
  * * Funções básicas para manipulação de grafos em ambas representações, incluindo:
  * * Gabriel - [ ✅ ] Criação de um grafo com X v ́ertices (o n ́umero de v ́ertices deve ser inserido pelo usu ́ario)
- * * [ ❌ ] Criação e remoção de arestas
+ * * Gabriel - [ ✅ ] Criação e remoção de arestas
  * * [ ❌ ] Ponderação e rotulação de v ́ertices
  * * [ ❌ ] Ponderação e rotulação de arestas
  * * [ ❌ ] Checagem de adjacência entre v ́ertices
@@ -32,6 +32,7 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
 
+        // Instanciando Grafo 1 a partir de arquivo
         graph1 = GraphIO.readGraph("Codigo/src/GraphIO/grafo_teste.pajek");
         graph1.GerarListaDeAdjacenciaAPartirDaMatriz();
         System.out.println(graph1.toString());
@@ -40,12 +41,19 @@ public class Main {
         System.out.println("\n\n===");
 
 
+        // Instanciando grafo 2 a partir no numero de vertices
         graph2 = new Graph( 10);
         System.out.println(graph2.toString());
 
-        graph2.addAresta(10, 19);
-
+        // Adicionando aresta ao grafo
+        graph2.addAresta(5, 8);
         System.out.println(graph2.toString());
+
+        // Removendo Aresta do grafo
+        graph2.rmAresta(5, 8);
+        System.out.println(graph2.toString());
+
+
 
 
 
