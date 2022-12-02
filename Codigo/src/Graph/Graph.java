@@ -13,6 +13,8 @@ public class Graph extends GraphMatrix {
     public int ROTULOS_VERTICE = 0;
     public int ROTULOS_ARESTA = 0;
 
+    public Tabela tabela_busca_profundidade;
+
     /**
      * Construtor padrão que cria um grafo em estrutura de lista
      * de adjacencia somente com os vertices. Inicialmente
@@ -27,6 +29,7 @@ public class Graph extends GraphMatrix {
         this.ROTULOS_VERTICE = n_vertices;
         this.GerarListaDeAdjacencia();
         this.arestas = new ArrayList<>();
+        this.tabela_busca_profundidade = new Tabela(n_vertices);
     }
 
     /**
@@ -345,4 +348,38 @@ public class Graph extends GraphMatrix {
         }
         return str;
     }
+
+
+    //=========================================================================
+    //------------------------------ ENTREGA 2 --------------------------------
+    //=========================================================================
+
+
+    public void ExecutarBuscaEmProfundidade(){
+        //this.tabela_busca_profundidade.pai[4] = 99;
+        //this.BuscaEmProfundidade(4);
+        while ( this.tabela_busca_profundidade.aindaHaVerticesParaExplorar() ){
+            this.BuscaEmProfundidade(this.tabela_busca_profundidade.proximoVerticeAExplorar());
+        }
+        System.out.println(this.tabela_busca_profundidade.toString());
+    }
+    private void BuscaEmProfundidade( int v ){
+        this.tabela_busca_profundidade.T++;
+        this.tabela_busca_profundidade.TD[v] = this.tabela_busca_profundidade.T;
+        for( int i = 0 ; i < this.vertices.get(v).arestas.size() ; i++ ){
+            int w = this.vertices.get(v).arestas.get(i).rotulo;
+            if ( this.tabela_busca_profundidade.TD[w] == 0){
+                System.out.println("Visitando aresta { v: "+ v + " w: "+w+" }");
+                this.tabela_busca_profundidade.pai[w] = v;
+                this.BuscaEmProfundidade(w);
+            } else if ( 
+                this.tabela_busca_profundidade.TT[w] == 0 &&
+                 w != this.tabela_busca_profundidade.pai[v]){
+                    System.out.println("Visitando aresta { v: "+ v + " w: "+w+" }");
+            }
+            this.tabela_busca_profundidade.T++;
+            this.tabela_busca_profundidade.TT[v] = this.tabela_busca_profundidade.T;
+        }
+    }
+
 }

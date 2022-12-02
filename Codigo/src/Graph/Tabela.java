@@ -2,6 +2,7 @@ package Codigo.src.Graph;
 
 public class Tabela {
 
+    public int T;
     public int[] TD;
     public int[] TT;
     public int[] pai;
@@ -9,6 +10,7 @@ public class Tabela {
     public int n_vertices;
 
     public Tabela(int vertices) {
+        this.T = 0;
         this.TD = new int[vertices];
         this.TT = new int[vertices];
         this.pai = new int[vertices];
@@ -35,10 +37,32 @@ public class Tabela {
         return false;
     }
 
+    public int proximoVerticeAExplorar(){
+        for ( int i  = 0 ; i < this.TD.length ; i++ ){
+            if( this.TD[i] == 0 ){
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public String toString(){
-        String str = "";
+        String str = "-- |";
         for( int i = 0 ; i < this.n_vertices ; i++ ){
-            str+=String.format(" %-3d |", this.TD[i]);
+            str+=String.format(" %-3d |", i+1);
+        }
+
+        str += "\nTD |";
+        for( int i = 0 ; i < this.TD.length ; i++ ){
+            str+=String.format(" %-3d |", this.TD[i]+1);
+        }
+        str += "\nTT |";
+        for( int i = 0 ; i < this.TT.length ; i++ ){
+            str+=String.format(" %-3d |", this.TT[i]+1);
+        }
+        str += "\npai |";
+        for( int i = 0 ; i < this.pai.length ; i++ ){
+            str+=String.format(" %-3d |", this.pai[i]+1);
         }
         return str;
     }
