@@ -29,6 +29,22 @@ public class GraphTest {
             assertEquals(true, g_matriz.isVazio());
             assertEquals(true, g_adjacente.isVazio());
         }
+
+        @Test
+        public void VerificarGrafoCompleto() {
+            GraphMatrix g_matriz = new GraphMatrix(3);
+            g_matriz.addArestaNaMatriz(1, 2);
+            g_matriz.addArestaNaMatriz(2, 3);
+            g_matriz.addArestaNaMatriz(3, 1);
+
+            Graph g_adjacente = new Graph(3);
+            g_adjacente.addAresta(1, 2);
+            g_adjacente.addAresta(2, 3);
+            g_adjacente.addAresta(3, 1);
+            
+            assertEquals(true, g_matriz.isCompleto());
+            assertEquals(true, g_adjacente.isCompleto());
+        }
     }
 
     class VerticeMatrizTeste {

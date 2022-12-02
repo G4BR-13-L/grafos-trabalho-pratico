@@ -185,4 +185,27 @@ public class GraphMatrix {
         return this.n_vertices <= 0;
     }
 
+
+    /**
+     * Verifica se um grafo em matriz é completo sem considerar
+     * laços com os proprios vertices
+     * @return true ou false
+     */
+    public boolean isCompleto(){
+        if( this.isVazio() ){
+            return false;
+        }
+        for( int i = 0 ; i < this.n_vertices ; i++ ){
+            for( int j = 0 ; j < this.n_vertices ; j++ ){
+                if( i != j ){
+                    if( this.matrix[i][j] == 0 ){
+                        return false;
+                    }
+
+                }
+            }
+        }
+        return true;
+    }
+
 }

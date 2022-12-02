@@ -276,6 +276,23 @@ public class Graph extends GraphMatrix {
         return this.vertices.isEmpty() && this.arestas.isEmpty();
     }
 
+    /**
+     * Verifica se um grafo em matriz é completo sem considerar
+     * laços com os proprios vertices
+     * @return true ou false
+     */
+    public boolean isCompleto(){
+        if( this.isVazio() ){
+            return false;
+        }
+        for( int i = 0 ; i < this.vertices.size() ; i++ ){
+            if( this.vertices.get(i).arestas.size() != (this.vertices.size() - 1) ){
+                return false;
+            }
+        }
+        return true;
+    }
+
 
     /**
      * ToString para printar a lista de adjecencia
