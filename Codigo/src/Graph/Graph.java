@@ -206,6 +206,11 @@ public class Graph extends GraphMatrix {
         return qtdArestas / 2;
     }
 
+    /**
+     * Atribui um peso ao vertice procurado a partir do rotulo
+     * e pondera tambem o messmo vertice na matriz chamando o método
+     * pai que foi sobrescrito.
+     */
     @Override
     public void ponderarVertice(int rotulo, int peso) {
         for (int i = 0; i < this.vertices.size(); i++) {
@@ -215,6 +220,41 @@ public class Graph extends GraphMatrix {
                 return;
             }
         }
+    }
+
+    /**
+     * Pondera aresta do grafo em formato de lista ao iterar
+     * sobre o conjunto de arestas do grafo. O custo total é O(n).
+     * Ao final da operação, após ter encontrado a aresta na lista, é chamado
+     * o método da classe pai para atualizar a martiz do grafo.
+     */
+    @Override
+    public void ponderarAresta(int v_origem, int v_destino, int peso) {
+        for (int i = 0; i < this.arestas.size(); i++) {
+            if ((this.arestas.get(i).rotuloVerticeV == v_origem
+                    && this.arestas.get(i).rotuloVerticeW == v_destino) ||
+                    (this.arestas.get(i).rotuloVerticeW == v_origem
+                            && this.arestas.get(i).rotuloVerticeV == v_destino)) {
+                this.arestas.get(i).peso = peso;
+                super.ponderarAresta(v_origem, v_destino, peso);
+                return;
+            }
+        }
+        System.out.println("ERRO: Aresta não encontrada");
+    }
+
+    public Aresta getAresta(int v_origem, int v_destino) {
+        for (int i = 0; i < this.arestas.size(); i++) {
+            if ((this.arestas.get(i).rotuloVerticeV == v_origem
+                    && this.arestas.get(i).rotuloVerticeW == v_destino) ||
+                    (this.arestas.get(i).rotuloVerticeW == v_origem
+                            && this.arestas.get(i).rotuloVerticeV == v_destino)) {
+
+                return this.arestas.get(i);
+            }
+        }
+        System.out.println("ERRO: Aresta não encontrada");
+        return null;
     }
 
     /**

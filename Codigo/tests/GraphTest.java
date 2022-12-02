@@ -24,6 +24,7 @@ public class GraphTest {
             grafo_matriz = new GraphMatrix(10);
             assertEquals(10, grafo.getQuantidadeVerticesNaMatriz());
         }
+
         @Test
         public void PonderarVerticeMatrizTeste() {
             grafo_matriz = new GraphMatrix(10);
@@ -38,9 +39,16 @@ public class GraphTest {
             grafo_matriz.addArestaNaMatriz(1, 9);
             grafo_matriz.addArestaNaMatriz(2, 8);
             assertEquals(2, grafo.getQuantidadeDeArestasNaMatriz());
+        }
 
+        @Test
+        public void PonderarArestaMatrizTeste() {
+            grafo_matriz = new GraphMatrix(10);
+            grafo_matriz.ponderarAresta(1,2, 10);
+            assertEquals(10, grafo.matrix[1][2]);
         }
     }
+
 
     class VerticeAdjacenciaTest {
         @Test
@@ -48,8 +56,9 @@ public class GraphTest {
             grafo = new Graph(10);
             assertEquals(10, grafo.getQuantidadeVertices());
         }
-        public void PonderarVerticeAdjacenciaTeste(){
-            grafo.ponderarVertice(1,10);
+
+        public void PonderarVerticeAdjacenciaTeste() {
+            grafo.ponderarVertice(1, 10);
             assertEquals(10, grafo.vertices.get(1).peso);
         }
     }
@@ -73,7 +82,13 @@ public class GraphTest {
             grafo.addAresta(1, 9);
             grafo.addAresta(2, 8);
             assertEquals(2, grafo.getQuantidadeArestas());
+        }
 
+        @Test
+        public void PonderarArestaAdjacenciaTeste() {
+            grafo.addAresta(1, 9);
+            grafo.ponderarAresta(1,9 , 10);
+            assertEquals(2, grafo.getAresta(1,9).peso);
         }
     }
 

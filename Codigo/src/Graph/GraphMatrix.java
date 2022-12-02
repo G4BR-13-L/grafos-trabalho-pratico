@@ -138,8 +138,25 @@ public class GraphMatrix {
     }
 
 
+    /**
+     * Pondera o vertice a um custo de O(1) para inserir na matriz
+     * @param rotulo
+     * @param peso
+     */
     public void ponderarVertice(int rotulo, int peso){
         this.matrix_peso_vertices[rotulo]  = peso;
+    }
+
+
+    /**
+     * Pondera aresta a um custo O(1) na matriz
+     * @param v_origem
+     * @param v_destino
+     * @param peso
+     */
+    public void ponderarAresta(int v_origem, int v_destino, int peso){
+        this.matrix[v_origem][v_destino] = peso;
+        this.matrix[v_destino][v_origem] = peso;
     }
 
 }

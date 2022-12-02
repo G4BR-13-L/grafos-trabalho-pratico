@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import Codigo.src.Graph.Graph;
 import Codigo.src.GraphIO.GraphIO;
 
-
 public class Main {
     public static Graph graph1;
     public static Graph graph2;
@@ -18,12 +17,10 @@ public class Main {
         graph1.GerarListaDeAdjacenciaAPartirDaMatriz();
         System.out.println(graph1.toString());
 
-
         System.out.println("\n\n===");
 
-
         // Instanciando grafo 2 a partir no numero de vertices
-        graph2 = new Graph( 10);
+        graph2 = new Graph(10);
         System.out.println(graph2.toString());
 
         // Adicionando aresta ao grafo
@@ -34,13 +31,14 @@ public class Main {
         graph2.rmAresta(5, 8);
         System.out.println(graph2.toString());
 
-        // Ponderando do grafo
+        // Ponderando vertice do grafo
         graph2.ponderarVertice(5, 8);
         System.out.println(graph2.toString());
 
-
-
-
+        // Ponderando Aresta do grafo
+        graph2.addAresta(5, 8);
+        graph2.ponderarAresta(5, 8, 20);
+        System.out.println(graph2.toString());
 
     }
 }
