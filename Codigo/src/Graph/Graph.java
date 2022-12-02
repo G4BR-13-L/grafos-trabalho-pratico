@@ -140,7 +140,8 @@ public class Graph extends GraphMatrix {
      */
     public void rmAresta(int v_origem, int v_destino) {
         if (existeVertice(v_origem) && existeVertice(v_destino)) {
-            if (existeAdjacenciaEntreOsVertices(v_origem, v_destino) && existeAdjacenciaEntreOsVertices(v_destino, v_origem)) {
+            if (existeAdjacenciaEntreOsVertices(v_origem, v_destino)
+                    && existeAdjacenciaEntreOsVertices(v_destino, v_origem)) {
 
                 for (int i = 0; i < this.vertices.size(); i++) {
                     if (this.vertices.get(i).rotulo == v_origem) {
@@ -265,34 +266,60 @@ public class Graph extends GraphMatrix {
         return null;
     }
 
-
     /**
      * Nos diz se existem vertices no grafo
      * Caso não existam vertices, ele retorna true;
+     * 
      * @return
      */
     @Override
-    public boolean isVazio(){
+    public boolean isVazio() {
         return this.vertices.isEmpty() && this.arestas.isEmpty();
     }
 
     /**
      * Verifica se um grafo em matriz é completo sem considerar
      * laços com os proprios vertices
+     * 
      * @return true ou false
      */
-    public boolean isCompleto(){
-        if( this.isVazio() ){
+    public boolean isCompleto() {
+        if (this.isVazio()) {
             return false;
         }
-        for( int i = 0 ; i < this.vertices.size() ; i++ ){
-            if( this.vertices.get(i).arestas.size() != (this.vertices.size() - 1) ){
+        for (int i = 0; i < this.vertices.size(); i++) {
+            if (this.vertices.get(i).arestas.size() != (this.vertices.size() - 1)) {
                 return false;
             }
         }
         return true;
     }
 
+    /**
+     * Verifica se duas arestas compartilham do mesmo vertice, ou
+     * adjacencia
+     * 
+     * @param v_origem
+     * @param v_destino
+     * @param w_origem
+     * @param w_destino
+     * @return true ou false
+     */
+    @Override
+    public boolean isArestasAdjacentes(int v_origem, int v_destino, int w_origem, int w_destino) {
+        if (existeAdjacenciaEntreOsVertices(v_origem, v_destino)
+                && existeAdjacenciaEntreOsVertices(w_origem, w_destino)) {
+            if (v_origem == w_origem ||
+                    v_origem == w_destino ||
+                    v_destino == w_origem ||
+                    v_destino == w_destino) {
+                return true;
+            }
+            return false;
+        }
+        return false;
+
+    }
 
     /**
      * ToString para printar a lista de adjecencia

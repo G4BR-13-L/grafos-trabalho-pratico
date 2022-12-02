@@ -38,9 +38,9 @@ Desenvolver uma biblioteca para a manipulação de grafos, contendo:
 | Ponderação e rotulação de arestas                                                          | ✅       | Gabriel  |            |
 | Checagem de adjacência entre vertices                                                      | ✅       | Gabriel  | -          |
 | Checagem de adjacência entre vertices                                                      | ✅       | Gabriel  |            |
-| Checagem da adjacência de arestas                                                          | ❌       |          |            |
+| Checagem da adjacência de arestas                                                          | ✅       | Gabriel  |            |
 | Checagem da quantidade de vertices e arestas                                               | ✅       | Gabriel  | -          |
-| Checagem de grafo vazio e completo                                                         | ❌       |          |            |
+| Checagem de grafo vazio e completo                                                         | ✅       | Gabriel  |            |
 
 ## [ ENTREGA 2 ]
 

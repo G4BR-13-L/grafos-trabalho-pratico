@@ -80,7 +80,7 @@ public class GraphMatrix {
      * @param v_destino
      * @return true || false
      */
-    public boolean existeArestNaMatriz(int v_origem, int v_destino) {
+    public boolean existeArestaNaMatriz(int v_origem, int v_destino) {
         if (this.matrix[v_origem][v_destino] > 0) {
             return true;
         }
@@ -179,26 +179,27 @@ public class GraphMatrix {
     /**
      * Nos diz se existem vertices no grafo
      * Caso não existam vertices, ele retorna true;
+     * 
      * @return
      */
     public boolean isVazio() {
         return this.n_vertices <= 0;
     }
 
-
     /**
      * Verifica se um grafo em matriz é completo sem considerar
      * laços com os proprios vertices
+     * 
      * @return true ou false
      */
-    public boolean isCompleto(){
-        if( this.isVazio() ){
+    public boolean isCompleto() {
+        if (this.isVazio()) {
             return false;
         }
-        for( int i = 0 ; i < this.n_vertices ; i++ ){
-            for( int j = 0 ; j < this.n_vertices ; j++ ){
-                if( i != j ){
-                    if( this.matrix[i][j] == 0 ){
+        for (int i = 0; i < this.n_vertices; i++) {
+            for (int j = 0; j < this.n_vertices; j++) {
+                if (i != j) {
+                    if (this.matrix[i][j] == 0) {
                         return false;
                     }
 
@@ -206,6 +207,30 @@ public class GraphMatrix {
             }
         }
         return true;
+    }
+
+
+    /**
+     * Verifica se duas arestas compartilham do mesmo vertice, ou
+     * adjacencia
+     * @param v_origem
+     * @param v_destino
+     * @param w_origem
+     * @param w_destino
+     * @return true ou false
+     */
+    public boolean isArestasAdjacentes(int v_origem, int v_destino, int w_origem, int w_destino) {
+        if (existeArestaNaMatriz(v_origem, v_destino) && existeArestaNaMatriz(w_origem, w_destino)) {
+            if (v_origem == w_origem ||
+                    v_origem == w_destino ||
+                    v_destino == w_origem ||
+                    v_destino == w_destino) {
+                        return true;
+            }
+            return false;
+        }
+        return false;
+
     }
 
 }

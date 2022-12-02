@@ -41,9 +41,27 @@ public class GraphTest {
             g_adjacente.addAresta(1, 2);
             g_adjacente.addAresta(2, 3);
             g_adjacente.addAresta(3, 1);
-            
+
             assertEquals(true, g_matriz.isCompleto());
             assertEquals(true, g_adjacente.isCompleto());
+        }
+    }
+
+    class AdjacenciaDeArestasTeste{
+        @Test
+        public void AdjacenciaArestaTeste(){
+            GraphMatrix g_matriz = new GraphMatrix(3);
+            g_matriz.addArestaNaMatriz(1, 2);
+            g_matriz.addArestaNaMatriz(2, 3);
+            g_matriz.addArestaNaMatriz(3, 1);
+
+            Graph g_adjacente = new Graph(3);
+            g_adjacente.addAresta(1, 2);
+            g_adjacente.addAresta(2, 3);
+            g_adjacente.addAresta(3, 1);
+
+            assertEquals(true, g_matriz.isArestasAdjacentes(1,2 ,2,3));
+            assertEquals(true, g_adjacente.isArestasAdjacentes(1,2 ,2,3));
         }
     }
 
