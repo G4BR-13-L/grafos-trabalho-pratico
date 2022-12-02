@@ -34,10 +34,10 @@ Desenvolver uma biblioteca para a manipulação de grafos, contendo:
 | ------------------------------------------------------------------------------------------ | -------- | -------- | ---------- |
 | Criação de um grafo com X v ́ertices (o número de v ́ertices deve ser inserido pelo usuário) | ✅       | Gabriel  | -          |
 | Criação e remoção de arestas                                                               | ✅       | Gabriel  | -          |
-| Ponderação e rotulação de vertices                                                         | ✅       |          |            |
-| Ponderação e rotulação de arestas                                                          | ✅       |          |            |
+| Ponderação e rotulação de vertices                                                         | ✅       | Gabriel  |            |
+| Ponderação e rotulação de arestas                                                          | ✅       | Gabriel  |            |
 | Checagem de adjacência entre vertices                                                      | ✅       | Gabriel  | -          |
-| Checagem de adjacência entre vertices                                                      | ❌       |          |            |
+| Checagem de adjacência entre vertices                                                      | ✅       | Gabriel  |            |
 | Checagem da adjacência de arestas                                                          | ❌       |          |            |
 | Checagem da quantidade de vertices e arestas                                               | ✅       | Gabriel  | -          |
 | Checagem de grafo vazio e completo                                                         | ❌       |          |            |

@@ -2,7 +2,7 @@ package Codigo.src.Graph;
 
 public class GraphMatrix {
     public int[][] matrix;
-    public int[] matrix_peso_vertices; 
+    public int[] matrix_peso_vertices;
     public int n_vertices;
 
     /**
@@ -73,14 +73,15 @@ public class GraphMatrix {
     }
 
     /**
-     * Responde com uma pesquisa O(1) se existe uma relação 
+     * Responde com uma pesquisa O(1) se existe uma relação
      * entre 2 vertices na Matriz
+     * 
      * @param v_origem
      * @param v_destino
      * @return true || false
      */
-    public boolean existeArestNaMatriz(int v_origem, int v_destino){
-        if( this.matrix[v_origem][v_destino] > 0 ){
+    public boolean existeArestNaMatriz(int v_origem, int v_destino) {
+        if (this.matrix[v_origem][v_destino] > 0) {
             return true;
         }
         return false;
@@ -88,9 +89,10 @@ public class GraphMatrix {
 
     /**
      * Retorna a quantidade de vertices da lista de adjacencia
+     * 
      * @return
      */
-    public int getQuantidadeVerticesNaMatriz(){ 
+    public int getQuantidadeVerticesNaMatriz() {
         return this.n_vertices;
     }
 
@@ -98,15 +100,16 @@ public class GraphMatrix {
      * Retorna a quantidade de arestas da lista de adjacencia
      * 
      * OBS: Como é um grafo não direcionado, a relação dos vertices existe
-     * nas duas direções. Por isso dividimos a conta por 2 
+     * nas duas direções. Por isso dividimos a conta por 2
      * na hora no retorno
+     * 
      * @return
      */
-    public int getQuantidadeArestas(){ 
+    public int getQuantidadeArestas() {
         int qtdArestas = 0;
-        for ( int i = 0 ; i < this.n_vertices ; i++ ){
-            for ( int j = 0 ; j < this.n_vertices ; j++ ){
-                if( this.matrix[i][j] > 0 ){
+        for (int i = 0; i < this.n_vertices; i++) {
+            for (int j = 0; j < this.n_vertices; j++) {
+                if (this.matrix[i][j] > 0) {
                     qtdArestas++;
 
                 }
@@ -115,62 +118,71 @@ public class GraphMatrix {
         return qtdArestas / 2;
     }
 
-
     /**
      * Adiciona aresta com custo O(1) n Matriz
+     * 
      * @param v_origem
      * @param v_destino
      */
-    public void addArestaNaMatriz(int v_origem, int v_destino){
+    public void addArestaNaMatriz(int v_origem, int v_destino) {
         this.matrix[v_origem][v_destino] = 1;
         this.matrix[v_destino][v_origem] = 1;
     }
 
-
     /**
      * Remove aresta da matriz vom custo O(1)
+     * 
      * @param v_origem
      * @param v_destino
      */
-    public void rmArestaDaMatriz(int v_origem, int v_destino){
+    public void rmArestaDaMatriz(int v_origem, int v_destino) {
         this.matrix[v_origem][v_destino] = 0;
         this.matrix[v_destino][v_origem] = 0;
     }
 
-
     /**
      * Pondera o vertice a um custo de O(1) para inserir na matriz
+     * 
      * @param rotulo
      * @param peso
      */
-    public void ponderarVertice(int rotulo, int peso){
-        this.matrix_peso_vertices[rotulo]  = peso;
+    public void ponderarVertice(int rotulo, int peso) {
+        this.matrix_peso_vertices[rotulo] = peso;
     }
-
 
     /**
      * Pondera aresta a um custo O(1) na matriz
+     * 
      * @param v_origem
      * @param v_destino
      * @param peso
      */
-    public void ponderarAresta(int v_origem, int v_destino, int peso){
+    public void ponderarAresta(int v_origem, int v_destino, int peso) {
         this.matrix[v_origem][v_destino] = peso;
         this.matrix[v_destino][v_origem] = peso;
     }
 
-
     /**
      * Verifica a adjacencia entre vertices com custo O(1)
+     * 
      * @param v_origem
      * @param v_destino
      * @return
      */
-    public boolean existeAdjacenciaEntreOsVertices(int v_origem, int v_destino){
-        if( this.matrix[v_origem][v_destino] > 0 || this.matrix[v_destino][v_origem] > 0 ){
+    public boolean existeAdjacenciaEntreOsVertices(int v_origem, int v_destino) {
+        if (this.matrix[v_origem][v_destino] > 0 || this.matrix[v_destino][v_origem] > 0) {
             return true;
         }
         return false;
+    }
+
+    /**
+     * Nos diz se existem vertices no grafo
+     * Caso não existam vertices, ele retorna true;
+     * @return
+     */
+    public boolean isVazio() {
+        return this.n_vertices <= 0;
     }
 
 }

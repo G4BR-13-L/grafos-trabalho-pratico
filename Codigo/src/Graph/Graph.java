@@ -267,6 +267,17 @@ public class Graph extends GraphMatrix {
 
 
     /**
+     * Nos diz se existem vertices no grafo
+     * Caso não existam vertices, ele retorna true;
+     * @return
+     */
+    @Override
+    public boolean isVazio(){
+        return this.vertices.isEmpty() && this.arestas.isEmpty();
+    }
+
+
+    /**
      * ToString para printar a lista de adjecencia
      * de um jeito bem bacana
      */

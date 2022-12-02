@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.TestClassOrder;
 
 import Codigo.src.Graph.Graph;
 import Codigo.src.Graph.GraphMatrix;
@@ -20,6 +21,16 @@ public class GraphTest {
 
     }
 
+    class GrafoVazioCompleto {
+        @Test
+        public void VerificarGrafoVazio() {
+            GraphMatrix g_matriz = new GraphMatrix(0);
+            Graph g_adjacente = new Graph(0);
+            assertEquals(true, g_matriz.isVazio());
+            assertEquals(true, g_adjacente.isVazio());
+        }
+    }
+
     class VerticeMatrizTeste {
         @Test
         public void QuantidadeDeVertices() {
@@ -33,6 +44,7 @@ public class GraphTest {
             grafo_matriz.ponderarVertice(1, 10);
             assertEquals(10, grafo_matriz.matrix_peso_vertices[1]);
         }
+
         @Test
         public void VerificarAdjacenciaDeVerticeNaMatrizTeste() {
             grafo_matriz.addArestaNaMatriz(1, 2);
@@ -51,11 +63,10 @@ public class GraphTest {
         @Test
         public void PonderarArestaMatrizTeste() {
             grafo_matriz = new GraphMatrix(10);
-            grafo_matriz.ponderarAresta(1,2, 10);
+            grafo_matriz.ponderarAresta(1, 2, 10);
             assertEquals(10, grafo.matrix[1][2]);
         }
     }
-
 
     class VerticeAdjacenciaTest {
         @Test
@@ -68,6 +79,7 @@ public class GraphTest {
             grafo.ponderarVertice(1, 10);
             assertEquals(10, grafo.vertices.get(1).peso);
         }
+
         @Test
         public void VerificarAdjacenciaDeVerticeNaAdjacenciaTeste() {
             grafo.addAresta(1, 2);
@@ -99,8 +111,8 @@ public class GraphTest {
         @Test
         public void PonderarArestaAdjacenciaTeste() {
             grafo.addAresta(1, 9);
-            grafo.ponderarAresta(1,9 , 10);
-            assertEquals(2, grafo.getAresta(1,9).peso);
+            grafo.ponderarAresta(1, 9, 10);
+            assertEquals(2, grafo.getAresta(1, 9).peso);
         }
     }
 
