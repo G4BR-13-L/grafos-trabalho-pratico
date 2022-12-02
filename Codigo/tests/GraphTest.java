@@ -16,20 +16,27 @@ public class GraphTest {
     @BeforeEach
     void setup() {
         grafo = new Graph(10);
+        grafo_matriz = new GraphMatrix(10);
+
     }
 
     class VerticeMatrizTeste {
         @Test
         public void QuantidadeDeVertices() {
             grafo_matriz = new GraphMatrix(10);
-            assertEquals(10, grafo.getQuantidadeVerticesNaMatriz());
+            assertEquals(10, grafo_matriz.getQuantidadeVerticesNaMatriz());
         }
 
         @Test
         public void PonderarVerticeMatrizTeste() {
             grafo_matriz = new GraphMatrix(10);
             grafo_matriz.ponderarVertice(1, 10);
-            assertEquals(10, grafo.matrix_peso_vertices[1]);
+            assertEquals(10, grafo_matriz.matrix_peso_vertices[1]);
+        }
+        @Test
+        public void VerificarAdjacenciaDeVerticeNaMatrizTeste() {
+            grafo_matriz.addArestaNaMatriz(1, 2);
+            assertEquals(true, grafo_matriz.existeAdjacenciaEntreOsVertices(1, 2));
         }
     }
 
@@ -61,20 +68,25 @@ public class GraphTest {
             grafo.ponderarVertice(1, 10);
             assertEquals(10, grafo.vertices.get(1).peso);
         }
+        @Test
+        public void VerificarAdjacenciaDeVerticeNaAdjacenciaTeste() {
+            grafo.addAresta(1, 2);
+            assertEquals(true, grafo.existeAdjacenciaEntreOsVertices(1, 2));
+        }
     }
 
     class ArestasAdjacenciaTest {
         @Test
         public void AdicaoDeAresta() {
             grafo.addAresta(1, 9);
-            assertEquals(true, grafo.existeAresta(1, 9));
+            assertEquals(true, grafo.existeAdjacenciaEntreOsVertices(1, 9));
         }
 
         @Test
         public void remocaoDeAresta() {
             grafo.addAresta(1, 9);
             grafo.rmAresta(1, 9);
-            assertEquals(false, grafo.existeAresta(1, 9));
+            assertEquals(false, grafo.existeAdjacenciaEntreOsVertices(1, 9));
         }
 
         @Test

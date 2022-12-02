@@ -25,22 +25,22 @@ Desenvolver uma biblioteca para a manipulação de grafos, contendo:
 ### REPRESENTAÇÕES
 | Tarefa                                                  | Situação | Quem Fez | Observação |
 | ------------------------------------------------------- | -------- | -------- | ---------- |
-| Representação de grafos utilizando Matriz de adjacência | ✅        | Gabriel  | -          |
-| Representação de grafos utilizando Lista de adjacência  | ✅        | Gabriel  | -          |
+| Representação de grafos utilizando Matriz de adjacência | ✅       | Gabriel  | -          |
+| Representação de grafos utilizando Lista de adjacência  | ✅       | Gabriel  | -          |
 
 ### MANIPULAÇÃO
 
 | Tarefa                                                                                     | Situação | Quem Fez | Observação |
 | ------------------------------------------------------------------------------------------ | -------- | -------- | ---------- |
-| Criação de um grafo com X v ́ertices (o número de v ́ertices deve ser inserido pelo usuário) | ✅        | Gabriel  | -          |
-| Criação e remoção de arestas                                                               | ✅        | Gabriel  | -          |
-| Ponderação e rotulação de vertices                                                         | ✅        |          |            |
-| Ponderação e rotulação de arestas                                                          | ❌        |          |            |
-| Checagem de adjacência entre vertices                                                      | ✅        | Gabriel  | -          |
-| Checagem de adjacência entre arestas                                                       | ❌        |          |            |
-| Checagem da adjacência de arestas                                                          | ❌        |          |            |
-| Checagem da quantidade de vertices e arestas                                               | ✅        | Gabriel  | -          |
-| Checagem de grafo vazio e completo                                                         | ❌        |          |            |
+| Criação de um grafo com X v ́ertices (o número de v ́ertices deve ser inserido pelo usuário) | ✅       | Gabriel  | -          |
+| Criação e remoção de arestas                                                               | ✅       | Gabriel  | -          |
+| Ponderação e rotulação de vertices                                                         | ✅       |          |            |
+| Ponderação e rotulação de arestas                                                          | ✅       |          |            |
+| Checagem de adjacência entre vertices                                                      | ✅       | Gabriel  | -          |
+| Checagem de adjacência entre vertices                                                      | ❌       |          |            |
+| Checagem da adjacência de arestas                                                          | ❌       |          |            |
+| Checagem da quantidade de vertices e arestas                                               | ✅       | Gabriel  | -          |
+| Checagem de grafo vazio e completo                                                         | ❌       |          |            |
 
 ## [ ENTREGA 2 ]
 

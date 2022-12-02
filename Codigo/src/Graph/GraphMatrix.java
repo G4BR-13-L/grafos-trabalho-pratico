@@ -159,4 +159,18 @@ public class GraphMatrix {
         this.matrix[v_destino][v_origem] = peso;
     }
 
+
+    /**
+     * Verifica a adjacencia entre vertices com custo O(1)
+     * @param v_origem
+     * @param v_destino
+     * @return
+     */
+    public boolean existeAdjacenciaEntreOsVertices(int v_origem, int v_destino){
+        if( this.matrix[v_origem][v_destino] > 0 || this.matrix[v_destino][v_origem] > 0 ){
+            return true;
+        }
+        return false;
+    }
+
 }

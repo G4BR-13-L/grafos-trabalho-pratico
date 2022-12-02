@@ -90,7 +90,8 @@ public class Graph extends GraphMatrix {
      * @param v_destino
      * @return true || false
      */
-    public boolean existeAresta(int v_origem, int v_destino) {
+    @Override
+    public boolean existeAdjacenciaEntreOsVertices(int v_origem, int v_destino) {
         for (int i = 0; i < this.vertices.size(); i++) {
             if (this.vertices.get(i).rotulo == v_origem) {
                 for (int j = 0; j < this.vertices.get(i).arestas.size(); j++) {
@@ -139,7 +140,7 @@ public class Graph extends GraphMatrix {
      */
     public void rmAresta(int v_origem, int v_destino) {
         if (existeVertice(v_origem) && existeVertice(v_destino)) {
-            if (existeAresta(v_origem, v_destino) && existeAresta(v_destino, v_origem)) {
+            if (existeAdjacenciaEntreOsVertices(v_origem, v_destino) && existeAdjacenciaEntreOsVertices(v_destino, v_origem)) {
 
                 for (int i = 0; i < this.vertices.size(); i++) {
                     if (this.vertices.get(i).rotulo == v_origem) {
@@ -243,9 +244,9 @@ public class Graph extends GraphMatrix {
         System.out.println("ERRO: Aresta não encontrada");
     }
 
-
     /**
      * Esse método busca por uma aresta na lista e a retorna
+     * 
      * @param v_origem
      * @param v_destino
      * @return Aresta || Null
@@ -263,6 +264,7 @@ public class Graph extends GraphMatrix {
         System.out.println("ERRO: Aresta não encontrada");
         return null;
     }
+
 
     /**
      * ToString para printar a lista de adjecencia
