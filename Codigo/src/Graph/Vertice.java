@@ -6,10 +6,12 @@ import java.util.List;
 public class Vertice {
     public int rotulo;
     public List<Vertice> arestas;
+    public int peso;
 
     public Vertice(int rotulo) {
         this.arestas = new ArrayList<>();
         this.rotulo = rotulo;
+        this.peso = 1;
     }
 
     public void addAresta(Vertice e) {

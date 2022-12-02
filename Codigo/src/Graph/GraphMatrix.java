@@ -2,6 +2,7 @@ package Codigo.src.Graph;
 
 public class GraphMatrix {
     public int[][] matrix;
+    public int[] matrix_peso_vertices; 
     public int n_vertices;
 
     /**
@@ -20,6 +21,7 @@ public class GraphMatrix {
     public GraphMatrix(int n_vertices) {
         this.n_vertices = n_vertices;
         this.matrix = new int[n_vertices][n_vertices];
+        this.matrix_peso_vertices = new int[n_vertices];
         this.preencherMatrizComZeros();
     }
 
@@ -133,6 +135,11 @@ public class GraphMatrix {
     public void rmArestaDaMatriz(int v_origem, int v_destino){
         this.matrix[v_origem][v_destino] = 0;
         this.matrix[v_destino][v_origem] = 0;
+    }
+
+
+    public void ponderarVertice(int rotulo, int peso){
+        this.matrix_peso_vertices[rotulo]  = peso;
     }
 
 }

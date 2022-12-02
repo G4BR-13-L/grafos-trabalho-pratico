@@ -6,10 +6,12 @@ import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 
 import Codigo.src.Graph.Graph;
+import Codigo.src.Graph.GraphMatrix;
 
 public class GraphTest {
 
     Graph grafo;
+    GraphMatrix grafo_matriz;
 
     @BeforeEach
     void setup() {
@@ -19,16 +21,22 @@ public class GraphTest {
     class VerticeMatrizTeste {
         @Test
         public void QuantidadeDeVertices() {
-            grafo = new Graph(10);
+            grafo_matriz = new GraphMatrix(10);
             assertEquals(10, grafo.getQuantidadeVerticesNaMatriz());
+        }
+        @Test
+        public void PonderarVerticeMatrizTeste() {
+            grafo_matriz = new GraphMatrix(10);
+            grafo_matriz.ponderarVertice(1, 10);
+            assertEquals(10, grafo.matrix_peso_vertices[1]);
         }
     }
 
     class ArestasMatrizTeste {
         @Test
         public void QuantidadeDeArestas() {
-            grafo.addAresta(1, 9);
-            grafo.addAresta(2, 8);
+            grafo_matriz.addArestaNaMatriz(1, 9);
+            grafo_matriz.addArestaNaMatriz(2, 8);
             assertEquals(2, grafo.getQuantidadeDeArestasNaMatriz());
 
         }
@@ -39,6 +47,10 @@ public class GraphTest {
         public void QuantidadeDeVertices() {
             grafo = new Graph(10);
             assertEquals(10, grafo.getQuantidadeVertices());
+        }
+        public void PonderarVerticeAdjacenciaTeste(){
+            grafo.ponderarVertice(1,10);
+            assertEquals(10, grafo.vertices.get(1).peso);
         }
     }
 

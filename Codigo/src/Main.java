@@ -34,6 +34,10 @@ public class Main {
         graph2.rmAresta(5, 8);
         System.out.println(graph2.toString());
 
+        // Ponderando do grafo
+        graph2.ponderarVertice(5, 8);
+        System.out.println(graph2.toString());
+
 
 
 
