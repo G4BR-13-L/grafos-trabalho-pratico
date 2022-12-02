@@ -13,24 +13,53 @@ class GraphMatrix{
     + getQuantidadeArestas():int
     + addArestaNaMatriz(int v_origem, int v_destino):void
     + rmArestaDaMatriz(int v_origem, int v_destino):void
+    + ponderarVertice(int rotulo, int peso): void
+    + ponderarAresta(int v_origem, int v_destino, int peso): void
+    + existeAdjacenciaEntreOsVertices(int v_origem, int v_destino): boolean
+    + isVazio(): boolean
+    + isCompleto(): boolean
+    + isArestasAdjacentes(int v_origem, int v_destino, int w_origem, int w_destino): boolean
 }
 
 class Graph{
-    + n_vertices: int 
-    + vertices: List<Vertice> 
-    + arestas: List<Aresta> 
+    + n_vertices: int
+    + vertices: List<Vertice>
+    + arestas: List<Aresta>
     + ROTULOS_VERTICE: int  = 0
     + ROTULOS_ARESTA: int  = 0
     + Graph(int n_vertices)
-    + void GerarListaDeAdjacencia()
-    + void GerarListaDeAdjacenciaAPartirDaMatriz() 
-    - boolean existeVertice(int v_find)
-    + boolean existeAresta(int v_origem, int v_destino)
-    + void addAresta(int v_origem, int v_destino) 
-    + void rmAresta(int v_origem, int v_destino)
-    + String toString() 
-    + int getQuantidadeArestas()
-    + int getQuantidadeVertices()
+    + GerarListaDeAdjacencia(): void
+    + GerarListaDeAdjacenciaAPartirDaMatriz() : void
+    - existeVertice(int v_find): boolean
+    + existeAresta(int v_origem, int v_destino): boolean
+    + addAresta(int v_origem, int v_destino) : void
+    + rmAresta(int v_origem, int v_destino): void
+    + toString() : String
+    + getQuantidadeArestas(): int
+    + getQuantidadeVertices(): int
+    + ponderarVertice(int rotulo, int peso): void
+    + ponderarAresta(int v_origem, int v_destino, int peso): void
+    + getAresta(int v_origem, int v_destino): Aresta
+    + isVazio(): boolean
+    + isCompleto(): boolean
+    + isArestasAdjacentes(int v_origem, int v_destino, int w_origem, int w_destino): boolean
+}
+class Vertice {
+    + rotulo: int
+    + arestas: List<Vertice>
+    + peso : int
+    + Vertice(int rotulo) : void
+    + addAresta(Vertice e) : void
+    + arestasToString() : String
+}
+
+class Aresta {
+    + rotulo:int
+    + peso:int
+    + rotuloVerticeV:int
+    + rotuloVerticeW:int
+    + Aresta(int rotulo, int peso, int rotuloVerticeV, int rotuloVerticeW)
+    + Aresta(int rotulo, int rotuloVerticeV, int rotuloVerticeW)
 }
 
 class GraphDinamic{
@@ -39,5 +68,7 @@ class GraphDinamic{
 
 GraphMatrix <|-- Graph
 Graph <|-- GraphDinamic
+Graph o-- Aresta
+Graph o-- Vertice
 
 @enduml
