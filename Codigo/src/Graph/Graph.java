@@ -243,6 +243,13 @@ public class Graph extends GraphMatrix {
         System.out.println("ERRO: Aresta não encontrada");
     }
 
+
+    /**
+     * Esse método busca por uma aresta na lista e a retorna
+     * @param v_origem
+     * @param v_destino
+     * @return Aresta || Null
+     */
     public Aresta getAresta(int v_origem, int v_destino) {
         for (int i = 0; i < this.arestas.size(); i++) {
             if ((this.arestas.get(i).rotuloVerticeV == v_origem
