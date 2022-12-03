@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Codigo.src.Graph.Graph;
-import Codigo.src.Graph.GraphNaiveBridge;
 import Codigo.src.GraphGenerator.GraphGenerator;
 import Codigo.src.GraphIO.GraphIO;
 
@@ -16,7 +15,7 @@ public class Main {
     public static Graph graph2;
     public static Graph graph3;
     public static Graph graph4;
-    public static GraphNaiveBridge graph5;
+    public static Graph graph5;
 
     public static void main(String[] args) throws IOException {
 
@@ -80,7 +79,7 @@ public class Main {
 
 
         // Busca por ponte de maneira ingenua
-        graph5 = new GraphNaiveBridge(5);
+        graph5 = new Graph(5);
         graph5.addAresta(0,1);
         graph5.addAresta(1,2);
         graph5.addAresta(2,3);

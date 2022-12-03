@@ -375,6 +375,7 @@ public class Graph extends GraphMatrix {
     //=========================================================================
 
 
+    /* -------------------------- BUSCA EM PROFUNDIDADE ------------------------- */
     public void ExecutarBuscaEmProfundidade(boolean print_tabela){
         ExecutarBuscaEmProfundidade();
         System.out.println(this.tabela_busca_profundidade.toString());
@@ -401,6 +402,31 @@ public class Graph extends GraphMatrix {
             this.tabela_busca_profundidade.T++;
             this.tabela_busca_profundidade.TT[v] = this.tabela_busca_profundidade.T;
         }
+    }
+
+    
+
+    /* --------------------- Busca Naive por ponte no Grafo --------------------- */
+    public boolean ExecutarNaiveBridgeFind() {
+        this.BuscaEmProfundidade(this.tabela_busca_profundidade.proximoVerticeAExplorar());
+        if (this.tabela_busca_profundidade.aindaHaVerticesParaExplorar()) {
+            return false;
+        }
+        return true;
+    }
+
+    public void buscaNaive() {
+        for (int k = 0; k < this.getQuantidadeArestas(); k++) {
+            Aresta aresta = this.arestas.get(k);
+            this.rmAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW);
+            if (ExecutarNaiveBridgeFind()) {
+                System.out.println("Ponte Encontrada: \n" + aresta.toString());
+                this.addAresta(aresta);
+                return;
+            }
+            this.addAresta(aresta);
+        }
+
     }
 
 }
