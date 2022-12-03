@@ -60,7 +60,7 @@ public class Main {
         System.out.println("\n\n\n");
 
         // Gerador de grafo
-        graph4 = GraphGenerator.generateGraph(10, 1, 3);
+        graph4 = GraphGenerator.generateGraph(1000, 3, 8);
         System.out.println(graph4.toString());
 
 
