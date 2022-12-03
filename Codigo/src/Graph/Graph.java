@@ -355,13 +355,14 @@ public class Graph extends GraphMatrix {
     //=========================================================================
 
 
+    public void ExecutarBuscaEmProfundidade(boolean print_tabela){
+        ExecutarBuscaEmProfundidade();
+        System.out.println(this.tabela_busca_profundidade.toString());
+    }
     public void ExecutarBuscaEmProfundidade(){
-        //this.tabela_busca_profundidade.pai[4] = 99;
-        //this.BuscaEmProfundidade(4);
         while ( this.tabela_busca_profundidade.aindaHaVerticesParaExplorar() ){
             this.BuscaEmProfundidade(this.tabela_busca_profundidade.proximoVerticeAExplorar());
         }
-        System.out.println(this.tabela_busca_profundidade.toString());
     }
     private void BuscaEmProfundidade( int v ){
         this.tabela_busca_profundidade.T++;
