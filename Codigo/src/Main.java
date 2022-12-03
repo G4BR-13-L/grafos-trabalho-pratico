@@ -44,6 +44,10 @@ public class Main {
         graph2.ponderarAresta(5, 8, 20);
         System.out.println(graph2.toString());
 
+        System.out.println("\n\n\n");
+        System.out.println("\n\n\n");
+        System.out.println("\n\n\n");
+
 
         // Busca em profundidade
         graph3 = new Graph(6);
@@ -56,6 +60,7 @@ public class Main {
         graph3.addAresta(4, 5);
         graph3.addAresta(3, 5);
         graph3.addAresta(1, 5);
+        System.out.println(graph3.toString());
 
         graph3.ExecutarBuscaEmProfundidade();
         System.out.println("\n\n\n");
@@ -64,8 +69,9 @@ public class Main {
         System.out.println(graph3.getQuantidadeDeArestasNaMatriz());
 
         // Gerador de grafo
-        //graph4 = GraphGenerator.generateGraph(1000, 3, 8);
+        //graph4 = GraphGenerator.generateGraph(6, 3, 8);
         //System.out.println(graph4.toString());
+        //graph4.ExecutarBuscaEmProfundidade();
 
 
 
