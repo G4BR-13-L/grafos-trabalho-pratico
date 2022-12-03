@@ -49,7 +49,7 @@ public class GraphIO {
         while (sc.hasNext()) {
             int i = sc.nextInt();
             int j = sc.nextInt();
-            graph.matrix[i - 1][j - 1] = 1;
+            graph.addAresta(i-1,j-1);
         }
         
         // fechar scanner*/

@@ -2,7 +2,6 @@ package Codigo.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -24,7 +23,10 @@ public class GraphIOTest {
     @Test
     public void testeDeLeituraDeGrafos() throws FileNotFoundException{
         Graph g = GraphIO.readGraph("grafo_teste.pajek");
+        g.GerarListaDeAdjacenciaAPartirDaMatriz();
+        System.out.println(g.toString());
         assertEquals(9, g.n_vertices);
         assertEquals(12, g.getQuantidadeDeArestasNaMatriz());
+        assertEquals(12, g.getQuantidadeArestas());
     }
 }

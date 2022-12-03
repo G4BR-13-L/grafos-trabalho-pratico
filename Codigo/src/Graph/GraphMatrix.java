@@ -52,7 +52,7 @@ public class GraphMatrix {
                 }
             }
         }
-        return n_arestas;
+        return n_arestas / 2;
     }
 
     /**

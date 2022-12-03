@@ -1,7 +1,8 @@
 package Codigo.src;
 
-import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 
 import Codigo.src.Graph.Graph;
 import Codigo.src.GraphGenerator.GraphGenerator;
@@ -13,7 +14,7 @@ public class Main {
     public static Graph graph3;
     public static Graph graph4;
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
 
         // Instanciando Grafo 1 a partir de arquivo
         graph1 = GraphIO.readGraph("Codigo/src/GraphIO/grafo_teste.pajek");
@@ -58,10 +59,14 @@ public class Main {
 
         graph3.ExecutarBuscaEmProfundidade();
         System.out.println("\n\n\n");
+        System.out.println("\n\n\n");
+        System.out.println(graph3.getQuantidadeArestas());
+        System.out.println(graph3.getQuantidadeDeArestasNaMatriz());
 
         // Gerador de grafo
-        graph4 = GraphGenerator.generateGraph(1000, 3, 8);
-        System.out.println(graph4.toString());
+        //graph4 = GraphGenerator.generateGraph(1000, 3, 8);
+        //System.out.println(graph4.toString());
+
 
 
 
