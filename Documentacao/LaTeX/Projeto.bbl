@@ -1,0 +1,71 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v<VERSION> }
+
+\bibitem[Bjerregaard e Mahadevan 2006]{Bjerregaard:2006}
+\abntrefinfo{Bjerregaard e Mahadevan}{BJERREGAARD; MAHADEVAN}{2006}
+{BJERREGAARD, T.; MAHADEVAN, S. A survey of research and practices of
+  network-on-chip.
+\emph{\textbf{Computing Surveys}}, ACM, New York, USA, v.~38, n.~1, p. 1--51,
+  Jun. 2006.
+ISSN 0360-0300.}
+
+\bibitem[Duato, Yalamanchili e Lionel 2002]{Duato:2002}
+\abntrefinfo{Duato, Yalamanchili e Lionel}{DUATO; YALAMANCHILI; LIONEL}{2002}
+{DUATO, J.; YALAMANCHILI, S.; LIONEL, N. \emph{\textbf{Interconnection
+  networks}}: an engineering approach. San Francisco: Morgan Kaufmann
+  Publishers, 2002. 515~p.
+ISBN 1558608524.}
+
+\bibitem[Ganguly et al. 2011]{Ganguly:2011}
+\abntrefinfo{Ganguly et al.}{GANGULY et al.}{2011}
+{GANGULY, A. et al. Scalable hybrid wireless network-on-chip architectures for
+  multi-core systems.
+\emph{\textbf{Journal Transactions on Computers}}, IEEE Computer Society, Los
+  Alamitos, USA, v.~60, n.~10, p. 1485--1502, 2011.
+ISSN 0018-9340.}
+
+\bibitem[Keyes 2008]{Keyes:2008}
+\abntrefinfo{Keyes}{KEYES}{2008}
+{KEYES, R.~W. Moore’s law today.
+\emph{\textbf{Circuits and Systems Magazine}}, IEEE Computer Society, Los
+  Alamitos, USA, v.~8, n.~2, p. 53--54, 2008.}
+
+\bibitem[Menasce e Almeida 2002]{Menasce:2002}
+\abntrefinfo{Menasce e Almeida}{MENASCE; ALMEIDA}{2002}
+{MENASCE, D.~A.; ALMEIDA, V. A.~F. \emph{\textbf{Planejamento de capacidade
+  para serviços na web}}: métricas, modelos e métodos. Rio de Janeiro:
+  Campus, 2002. 472~p.
+ISBN 8535211020.}
+
+\bibitem[NPB 2011]{Nas:2011}
+\abntrefinfo{NPB}{NPB}{2011}
+{NPB. \textbf{NAS Parallel Benchmarks}. Disponível em
+  http://www.nas.nasa.gov/publications/npb.html. Acesso em jun. 2011.}
+
+\bibitem[Oliveira et al. 2011]{OliveiraIadis:2011}
+\abntrefinfo{Oliveira et al.}{OLIVEIRA et al.}{2011}
+{OLIVEIRA, P. A.~C. et al. Performance evaluation of winocs for parallel
+  workloads based on collective communications. In:  IADIS APPLIED COMPUTING,
+  8., 2011, Rio de Janeiro, Brasil. \emph{\textbf{Proceedings...}} Rio de
+  Janeiro: IADIS Applied Computing, 2011. p. 307--314.}
+
+\bibitem[Sasaki et al. 2009]{Sasaki:2009}
+\abntrefinfo{Sasaki et al.}{SASAKI et al.}{2009}
+{SASAKI, N. et al. A single-chip ultra-wideband receiver with silicon
+  integrated antennas for inter-chip wireless interconnection.
+\emph{\textbf{Journal of Solid-State Circuits}}, IEEE Computer Society, Los
+  Alamitos, USA, v.~44, n.~2, p. 382--393, Feb. 2009.
+ISSN 0018-9200.}
+
+\bibitem[Zhao 2008]{Zhao:2008}
+\abntrefinfo{Zhao}{ZHAO}{2008}
+{ZHAO, D. Ultraperformance wireless interconnect nanonetworks for heterogeneous
+  gigascale multi-processor \textsc{S}o\textsc{C}s. In:  2TH WORKSHOP ON CHIP
+  MULTIPROCESSOR, MEMORY SYSTEMS AND INTERCONNECTS, 3., 2008, Beijing, China.
+  \emph{\textbf{Proceedings...}} Beijing: CMP-MSI, 2008. p.~1--3.}
+
+\end{thebibliography}
