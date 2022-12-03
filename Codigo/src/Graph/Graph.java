@@ -30,6 +30,9 @@ public class Graph extends GraphMatrix {
         this.GerarListaDeAdjacencia();
         this.arestas = new ArrayList<>();
         this.tabela_busca_profundidade = new Tabela(n_vertices);
+
+        // Iniciando lista de Adjacência Fleury
+        initGraph();
     }
 
     /**
@@ -381,6 +384,121 @@ public class Graph extends GraphMatrix {
             this.tabela_busca_profundidade.T++;
             this.tabela_busca_profundidade.TT[v] = this.tabela_busca_profundidade.T;
         }
+    }
+
+
+    //Fleury
+    public ArrayList<Integer>[] adj;
+
+    @SuppressWarnings("unchecked") public void initGraph(){
+        adj = new ArrayList[n_vertices];
+
+        for (int i = 0; i < n_vertices; i++) {
+            adj[i] = new ArrayList<>();
+        }
+    }
+
+    public void addEdge(Integer v_origem, Integer v_destino)
+    {
+        adj[v_origem].add(v_destino);
+        adj[v_destino].add(v_origem);
+    }
+ 
+    public void removeEdge(Integer v_origem, Integer v_destino)
+    {
+        adj[v_origem].remove(v_destino);
+        adj[v_destino].remove(v_origem);
+    }
+
+    /**
+     * Ele imprime o passeio euleriano do grafo.
+     */
+    public void Fleury(){
+        
+        Integer v_origem = 0;
+ 
+        for (int i = 0; i < n_vertices; i++) {
+            if (adj[i].size() % 2 == 1) {
+                v_origem = i;
+                break;
+            }
+        }
+        printFleuryTour(v_origem);
+        System.out.println("\n");
+    }
+
+    /**
+     * Se houver uma próxima aresta válida, imprima-a e repita o percurso restante
+     * 
+     * @param v_origem O vértice a partir do qual o passeio começa
+     */
+    public void printFleuryTour(Integer v_origem){
+        // Recorrer para todos os vértices adjacentes a este
+        // vertices
+        for (int i = 0; i < adj[v_origem].size(); i++) {
+            Integer v_destino = adj[v_origem].get(i);
+            // Se a aresta v_origem - v_destino é uma próxima aresta válida
+            if (isValidNextEdge(v_origem, v_destino)) {
+                System.out.print(v_origem + "-" + v_destino + " " + "/ ");
+ 
+                removeEdge(v_origem, v_destino);
+                printFleuryTour(v_destino);
+            }
+        }
+    }
+
+    /**
+     * Se o número de vértices visitados no DFS a partir do vértice v_origem for igual ao
+     * número de vértices alcançáveis ​​de v_origem, então v_destino não é um vértice válido para ser adicionado a
+     * lista de v_origem
+     * 
+     * @param v_origem O vértice a partir do qual a aresta deve ser adicionada.
+     * @param v_destino O vértice que está sendo adicionado ao gráfico
+     * @return O método está retornando um valor booleano.
+     */
+    public boolean isValidNextEdge(Integer v_origem, Integer v_destino)
+    {
+        // A aresta u-v é válida em uma dos
+        // dois casos a seguir:
+ 
+        // 1) Se v_destino é o único vértice adjacente de v_origem
+        // ou seja, o tamanho da lista de vértices adjacentes é 1
+        if (adj[v_origem].size() == 1) {
+            return true;
+        }
+ 
+        // 2) Se houver vários adjacentes, então
+        // v_origem-v_destino não é uma ponte Execute os seguintes passos
+        // para verificar se u-v é uma ponte
+        // 2.a) contagem de vértices alcançáveis ​​de u
+        boolean[] isVisited = new boolean[this.n_vertices];
+        int count1 = dfsCount(v_origem, isVisited);
+ 
+        // 2.b) Remova a borda (u, v) e depois de remover
+        // a borda, conte os vértices alcançáveis ​​de u
+        removeEdge(v_origem, v_destino);
+        isVisited = new boolean[this.n_vertices];
+        int count2 = dfsCount(v_origem, isVisited);
+ 
+        // 2.c) Adicione a aresta de volta ao gráfico
+        addEdge(v_origem, v_destino);
+        return (count1 > count2) ? false : true;
+    }
+
+    // Uma função baseada em DFS para contar alcançável
+    // vértices de v_destino
+    public int dfsCount(int v_destino, boolean[] isVisited)
+    {
+        // Marcar o nó atual como visitado
+        isVisited[v_destino] = true;
+        int count = 1;
+        // Recorrer para todos os vértices adjacentes a este vértice
+        for (int adj : adj[v_destino]) {
+            if (!isVisited[adj]) {
+                count = count + dfsCount(adj, isVisited);
+            }
+        }
+        return count;
     }
 
 }
