@@ -270,6 +270,15 @@ public class Graph extends GraphMatrix {
     }
 
     /**
+     * Retorna uma aresta de uma posição da lista de arestas.
+     * @param index
+     * @return
+     */
+    public Aresta getArestaFromList(int index){
+        return this.arestas.get(index);
+    }
+
+    /**
      * Nos diz se existem vertices no grafo
      * Caso não existam vertices, ele retorna true;
      * 
