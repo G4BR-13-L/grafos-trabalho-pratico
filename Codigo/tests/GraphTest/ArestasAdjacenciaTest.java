@@ -3,10 +3,8 @@ package Codigo.tests.GraphTest;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
-
+import Codigo.src.Graph.Aresta;
 import Codigo.src.Graph.Graph;
-import Codigo.src.Graph.GraphMatrix;
 
 public class ArestasAdjacenciaTest {
     Graph grafo;
@@ -41,5 +39,15 @@ public class ArestasAdjacenciaTest {
         grafo.addAresta(1, 9);
         grafo.ponderarAresta(1, 9, 10);
         assertEquals(10, grafo.getAresta(1, 9).peso);
+    }
+
+    @Test
+    public void AdicionaArestaAPartirdeObjetoArestaTest() {
+        grafo = new Graph(10);
+        Aresta a = new Aresta(0, 10, 1, 2);
+        grafo.addAresta(a);
+        assertEquals(true, grafo.existeAdjacenciaEntreOsVertices(1, 2));
+        assertEquals(10, grafo.getAresta(1, 2).peso);
+
     }
 }

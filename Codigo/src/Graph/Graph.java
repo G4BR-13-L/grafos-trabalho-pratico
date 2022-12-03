@@ -135,6 +135,17 @@ public class Graph extends GraphMatrix {
     }
 
     /**
+     * Adiciona uma aresta nova a partir da instancia de um ]
+     * objeto aresta
+     * @param aresta
+     */
+    public void addAresta(Aresta aresta){
+        this.addAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW);
+        this.ponderarAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW, aresta.peso);
+        super.addArestaNaMatriz(aresta.rotuloVerticeV, aresta.rotulo, aresta.peso);
+    }
+
+    /**
      * Remove a relação bidireciona ( aresta ), de 2 vertices
      * passados como parâmetro
      * 

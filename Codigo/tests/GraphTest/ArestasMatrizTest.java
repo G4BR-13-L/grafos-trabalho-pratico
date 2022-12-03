@@ -33,4 +33,12 @@ public class ArestasMatrizTest {
         assertEquals(10, grafo_matriz.matrix[1][2]);
     }
 
+    @Test
+    public void AdicionaArestaComPesoNaMatrizTeste() {
+        grafo_matriz = new GraphMatrix(10);
+        grafo_matriz.addArestaNaMatriz(1, 2, 10);
+        assertEquals(10, grafo_matriz.matrix[1][2]);
+    }
+
+
 }

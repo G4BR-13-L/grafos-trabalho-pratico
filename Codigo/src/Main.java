@@ -3,8 +3,11 @@ package Codigo.src;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import Codigo.src.Graph.Graph;
+import Codigo.src.Graph.GraphNaiveBridge;
 import Codigo.src.GraphGenerator.GraphGenerator;
 import Codigo.src.GraphIO.GraphIO;
 
@@ -13,6 +16,7 @@ public class Main {
     public static Graph graph2;
     public static Graph graph3;
     public static Graph graph4;
+    public static GraphNaiveBridge graph5;
 
     public static void main(String[] args) throws IOException {
 
@@ -44,9 +48,9 @@ public class Main {
         graph2.ponderarAresta(5, 8, 20);
         System.out.println(graph2.toString());
 
-        System.out.println("\n\n\n");
-        System.out.println("\n\n\n");
-        System.out.println("\n\n\n");
+        // System.out.println("\n\n\n");
+        // System.out.println("\n\n\n");
+        // System.out.println("\n\n\n");
 
 
         // Busca em profundidade
@@ -62,19 +66,29 @@ public class Main {
         graph3.addAresta(1, 5);
         System.out.println(graph3.toString());
 
-        graph3.ExecutarBuscaEmProfundidade();
-        System.out.println("\n\n\n");
-        System.out.println("\n\n\n");
-        System.out.println(graph3.getQuantidadeArestas());
-        System.out.println(graph3.getQuantidadeDeArestasNaMatriz());
+        // graph3.ExecutarBuscaEmProfundidade(true);
+        // System.out.println("\n\n\n");
+        // System.out.println("\n\n\n");
+        // System.out.println(graph3.getQuantidadeArestas());
+        // System.out.println(graph3.getQuantidadeDeArestasNaMatriz());
 
         // Gerador de grafo
-        //graph4 = GraphGenerator.generateGraph(6, 3, 8);
-        //System.out.println(graph4.toString());
+        // graph4 = GraphGenerator.generateGraph(100, 1, 1);
+        // System.out.println(graph4.toString());
         //graph4.ExecutarBuscaEmProfundidade();
 
 
 
+        // Busca por ponte de maneira ingenua
+        graph5 = new GraphNaiveBridge(5);
+        graph5.addAresta(0,1);
+        graph5.addAresta(1,2);
+        graph5.addAresta(2,3);
+        graph5.addAresta(3,4);
+        System.out.println(graph5.toString());
+        graph5.buscaNaive();
+        
+        
 
     }
 }
