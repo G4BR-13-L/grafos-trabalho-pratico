@@ -4,12 +4,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 import Codigo.src.Graph.Graph;
+import Codigo.src.GraphGenerator.GraphGenerator;
 import Codigo.src.GraphIO.GraphIO;
 
 public class Main {
     public static Graph graph1;
     public static Graph graph2;
     public static Graph graph3;
+    public static Graph graph4;
 
     public static void main(String[] args) throws FileNotFoundException {
 
@@ -55,6 +57,13 @@ public class Main {
         graph3.addAresta(1, 5);
 
         graph3.ExecutarBuscaEmProfundidade();
+        System.out.println("\n\n\n");
+
+        // Gerador de grafo
+        graph4 = GraphGenerator.generateGraph(10, 1, 3);
+        System.out.println(graph4.toString());
+
+
 
     }
 }
