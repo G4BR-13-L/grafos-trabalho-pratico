@@ -72,6 +72,7 @@ grafos grafos aleatórios contendo 100, 1000, 10000 e 100000 vértices.
 ## [ RELATORIO EM LATEX]
 | Tarefa                                      | Situação | Quem Fez | Observação |
 | ------------------------------------------- | -------- | -------- | ---------- |
+| Formatação                                  | ✅       | Rúbia    | -          |
 | Introdução                                  | ❌       |          | -          |
 | Objetivo                                    | ❌       |          | -          |
 | Metodologia                                 | ❌       |          | -          |
