@@ -61,6 +61,8 @@ grafos grafos aleatórios contendo 100, 1000, 10000 e 100000 vértices.
 | Busca em profundidade                                     | ✅       | Gabriel  | -          |
 | Teste de busca em profundidade                            | ❌       |          | -          |
 | Grafos de 100, 1.000, 10.000 e 100.000 vertices           | ❌       |          | -          |
+| Algoritmo para gerar grafos aleatórios vertices           | ✅       | Gabriel  | -          |
+| Salvamento de grafo em arquivo                            | ❌       |          | -          |
 | Algoritmo de Fleury                                       | ❌       |          | -          |
 | Algoritmo de Tarjan                                       | ❌       |          | -          |
 | Testes de tempo de processamento da busca em profundidade | ❌       |          | -          |
