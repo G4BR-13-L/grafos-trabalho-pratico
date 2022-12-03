@@ -130,6 +130,17 @@ public class GraphMatrix {
     }
 
     /**
+     * Adiciona aresta COM PESO com custo O(1) n Matriz
+     * 
+     * @param v_origem
+     * @param v_destino
+     */
+    public void addArestaNaMatriz(int v_origem, int v_destino, int peso) {
+        this.matrix[v_origem][v_destino] = peso;
+        this.matrix[v_destino][v_origem] = peso;
+    }
+
+    /**
      * Remove aresta da matriz vom custo O(1)
      * 
      * @param v_origem
