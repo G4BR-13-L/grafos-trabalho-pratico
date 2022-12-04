@@ -404,7 +404,7 @@ public class Graph extends GraphMatrix {
         }
     }
 
-    
+
 
     /* --------------------- Busca Naive por ponte no Grafo --------------------- */
     public boolean ExecutarNaiveBridgeFind() {
@@ -426,7 +426,6 @@ public class Graph extends GraphMatrix {
             }
             this.addAresta(aresta);
         }
-
     }
 
 }
