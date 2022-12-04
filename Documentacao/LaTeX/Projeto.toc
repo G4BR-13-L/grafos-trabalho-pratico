@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {\normalfont \mathversion {bold}\bfseries 3.1}\normalfont \textbf {\mathversion {bold}Biblioteca de manipulação de grafos}}{3}{}%
 \contentsline {subsection}{\numberline {3.1.1}{\textit {Atividade 1: xxxx}}}{4}{}%
 \contentsline {subsection}{\numberline {3.1.2}{\textit {Atividade 2: xxxx}}}{4}{}%
-\contentsline {subsection}{\numberline {3.1.3}{\textit {Atividade n: xxxx}}}{5}{}%
+\contentsline {subsection}{\numberline {3.1.3}{\textit {Atividade n: xxxx}}}{4}{}%
 \contentsline {section}{\numberline {\normalfont \mathversion {bold}\bfseries 3.2}\normalfont \textbf {\mathversion {bold}Cronograma}}{5}{}%
 \contentsline {chapter}{\numberline {4}Primeiro capítulo de exemplo}{6}{}%
 \contentsline {section}{\numberline {\normalfont \mathversion {bold}\bfseries 4.1}\normalfont \textbf {\mathversion {bold}Primeira seção}}{6}{}%
@@ -17,4 +17,3 @@
 \contentsline {section}{\numberline {\normalfont \mathversion {bold}\bfseries 4.2}\normalfont \textbf {\mathversion {bold}Segunda seção}}{6}{}%
 \contentsline {chapter}{\numberline {5}Segundo capítulo de exemplo}{7}{}%
 \contentsline {chapter}{\numberline {6}Observações importantes}{9}{}%
-\contentsline {chapter}{Refer\^encias}{10}{}%
