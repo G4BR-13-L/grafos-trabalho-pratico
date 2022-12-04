@@ -140,9 +140,10 @@ public class Graph extends GraphMatrix {
     /**
      * Adiciona uma aresta nova a partir da instancia de um ]
      * objeto aresta
+     * 
      * @param aresta
      */
-    public void addAresta(Aresta aresta){
+    public void addAresta(Aresta aresta) {
         this.addAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW);
         this.ponderarAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW, aresta.peso);
         super.addArestaNaMatriz(aresta.rotuloVerticeV, aresta.rotulo, aresta.peso);
@@ -285,10 +286,11 @@ public class Graph extends GraphMatrix {
 
     /**
      * Retorna uma aresta de uma posição da lista de arestas.
+     * 
      * @param index
      * @return
      */
-    public Aresta getArestaFromList(int index){
+    public Aresta getArestaFromList(int index) {
         return this.arestas.get(index);
     }
 
@@ -372,42 +374,41 @@ public class Graph extends GraphMatrix {
         return str;
     }
 
-
-    //=========================================================================
-    //------------------------------ ENTREGA 2 --------------------------------
-    //=========================================================================
-
+    // =========================================================================
+    // ------------------------------ ENTREGA 2 --------------------------------
+    // =========================================================================
 
     /* -------------------------- BUSCA EM PROFUNDIDADE ------------------------- */
-    public void ExecutarBuscaEmProfundidade(boolean print_tabela){
+    public void ExecutarBuscaEmProfundidade(boolean print_tabela) {
         ExecutarBuscaEmProfundidade();
         System.out.println(this.tabela_busca_profundidade.toString());
     }
-    public void ExecutarBuscaEmProfundidade(){
-        while ( this.tabela_busca_profundidade.aindaHaVerticesParaExplorar() ){
+
+    public void ExecutarBuscaEmProfundidade() {
+        while (this.tabela_busca_profundidade.aindaHaVerticesParaExplorar()) {
             this.BuscaEmProfundidade(this.tabela_busca_profundidade.proximoVerticeAExplorar());
         }
     }
-    private void BuscaEmProfundidade( int v ){
+
+    private void BuscaEmProfundidade(int v) {
         this.tabela_busca_profundidade.T++;
         this.tabela_busca_profundidade.TD[v] = this.tabela_busca_profundidade.T;
-        for( int i = 0 ; i < this.vertices.get(v).arestas.size() ; i++ ){
+        for (int i = 0; i < this.vertices.get(v).arestas.size(); i++) {
             int w = this.vertices.get(v).arestas.get(i).rotulo;
-            if ( this.tabela_busca_profundidade.TD[w] == 0){
-                System.out.println("Visitando aresta { v: "+ v + " w: "+w+" }");
+            if (this.tabela_busca_profundidade.TD[w] == 0) {
+                System.out.println("Visitando aresta { v: " + v + " w: " + w + " }");
                 this.tabela_busca_profundidade.pai[w] = v;
                 this.BuscaEmProfundidade(w);
-            } else if ( 
-                this.tabela_busca_profundidade.TT[w] == 0 &&
-                 w != this.tabela_busca_profundidade.pai[v]){
-                    System.out.println("Visitando aresta { v: "+ v + " w: "+w+" }");
+            } else if (this.tabela_busca_profundidade.TT[w] == 0 &&
+                    w != this.tabela_busca_profundidade.pai[v]) {
+                System.out.println("Visitando aresta { v: " + v + " w: " + w + " }");
             }
             this.tabela_busca_profundidade.T++;
             this.tabela_busca_profundidade.TT[v] = this.tabela_busca_profundidade.T;
         }
     }
 
- /* --------------------- Busca Naive por ponte no Grafo --------------------- */
+    /* --------------------- Busca Naive por ponte no Grafo --------------------- */
     public boolean ExecutarNaiveBridgeFind() {
         this.BuscaEmProfundidade(this.tabela_busca_profundidade.proximoVerticeAExplorar());
         if (this.tabela_busca_profundidade.aindaHaVerticesParaExplorar()) {
@@ -429,27 +430,46 @@ public class Graph extends GraphMatrix {
         }
     }
 
+    public boolean isPonte(Graph grafo, int v,int w) {
+        Aresta aresta = grafo.getAresta(v, w);
+        grafo.rmAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW);
+        if (ExecutarNaiveBridgeFind()) {
+            System.out.println("Ponte Encontrada: \n" + aresta.toString());
+            grafo.addAresta(aresta);
+            return true;
+        }
+        return false;
+    }
 
+    // Fleury
 
-    //Fleury
-
-    public boolean tresOuMaisVerticesDeGrauImpar(){
+    public boolean tresOuMaisVerticesDeGrauImpar() {
         int verticesGrauImpar = 0;
-        for(int i = 0; i < this.vertices.size(); i++){
-            if(this.vertices.get(i).arestas.size() % 2 != 0){
+        for (int i = 0; i < this.vertices.size(); i++) {
+            if (this.vertices.get(i).arestas.size() % 2 != 0) {
                 verticesGrauImpar++;
             }
-            if(verticesGrauImpar > 2){
+            if (verticesGrauImpar > 2) {
                 return true;
             }
         }
         return false;
     }
 
+    public int[] getArestasDoVertice(int v) {
+        Vertice vertice = this.vertices.get(v);
+        int[] listaVertices = new int[vertice.arestas.size()];
+
+        for (int i = 0; i < vertice.arestas.size(); i++) {
+            listaVertices[i] = vertice.arestas.get(i).rotulo;
+        }
+        return listaVertices;
+    }
+
     public void Fleury() {
-        if(tresOuMaisVerticesDeGrauImpar()){
+        if (tresOuMaisVerticesDeGrauImpar()) {
             System.out.println("Erro - Fleury não pode ser executado por ter 3 ou mais vértices de grau ímpar");
-            return; 
+            return;
         }
 
         System.out.println(this.toString());
@@ -464,32 +484,39 @@ public class Graph extends GraphMatrix {
 
         System.out.println(grafo.toString());
         int v = getVerticeGrauImpar();
-        while(grafo.arestas.size() != 0){
-            if(v > 1){
-                
+        
+        while (grafo.arestas.size() != 0) {
+            if (v > 1) {
+                int[] listaDeVertices = grafo.getArestasDoVertice(v);
+
+                for(int i = 0; i < listaDeVertices.length; i++){  
+                    if(!isPonte(grafo, v ,listaDeVertices[i])){
+                        grafo.rmAresta(v, listaDeVertices[i]);
+                    }
+                }
             }
         }
-
+        System.out.println(grafo.toString());
     }
 
-    public int getVerticeGrauImpar(){
-        for(int i = 0; i < this.vertices.size(); i++){
-            if(this.vertices.get(i).arestas.size() % 2 != 0){
+    public int getVerticeGrauImpar() {
+        for (int i = 0; i < this.vertices.size(); i++) {
+            if (this.vertices.get(i).arestas.size() % 2 != 0) {
                 return i;
             }
         }
         return 0;
     }
-    
+
     public ArrayList<Integer>[] adj;
 
-    @SuppressWarnings("unchecked") public void initGraph(){
+    @SuppressWarnings("unchecked")
+    public void initGraph() {
         adj = new ArrayList[n_vertices];
 
         for (int i = 0; i < n_vertices; i++) {
             adj[i] = new ArrayList<>();
         }
     }
-
 
 }
