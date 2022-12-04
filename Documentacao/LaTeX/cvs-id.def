@@ -16,8 +16,8 @@
 %% Corrigido argumento em \CVSPackage
 %%
 %% Revision 1.1  2003/10/10 10:01:07  gweber
-%% Arquivo que prov� os comandos para extrair informa��es geradas automaticamente
-%% pelo CVS tal como data, revis�o etc.
+%% Arquivo que provê os comandos para extrair informações geradas automaticamente
+%% pelo CVS tal como data, revisão etc.
 %%
 
 \def\CVSExtract$#1: #2.#3,v #4 #5 #6 #7 #8 $%

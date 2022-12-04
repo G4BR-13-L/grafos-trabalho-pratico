@@ -1,0 +1,5 @@
+@startuml Diagrama de Classe do GraphIO
+class GraphIO{
+    + readGraph(String filepath): Graph
+}
+@enduml

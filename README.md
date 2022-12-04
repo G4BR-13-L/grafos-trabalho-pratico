@@ -56,17 +56,30 @@ Após implementadas as duas soluções para detecção de pontes, você deverá 
 grafos grafos aleatórios contendo 100, 1000, 10000 e 100000 vértices.
 
 
-| Tarefa                                                    | Situação | Quem Fez | Observação |
-| --------------------------------------------------------- | -------- | -------- | ---------- |
-| Busca em profundidade                                     | ✅       | Gabriel  | -          |
-| Teste de busca em profundidade                            | ❌       |          | -          |
-| Grafos de 100, 1.000, 10.000 e 100.000 vertices           | ❌       |          | -          |
-| Algoritmo para gerar grafos aleatórios vertices           | ✅       | Gabriel  | -          |
-| Salvamento de grafo em arquivo                            | ❌       |          | -          |
-| Algoritmo de Fleury                                       | ❌       |          | -          |
-| Algoritmo de Tarjan                                       | ❌       |          | -          |
-| Testes de tempo de processamento da busca em profundidade | ❌       |          | -          |
-| Testes de tempo de processamento de Fleury                | ❌       |          | -          |
-| Testes de tempo de processamento de Tarjan                | ❌       |          | -          |
-|                                                           | ❌       |          | -          |
-|                                                           | ❌       |          | -          |
+| Tarefa                                          | Situação | Quem Fez | Observação |
+| ----------------------------------------------- | -------- | -------- | ---------- |
+| Busca em profundidade                           | ✅       | Gabriel  | -          |
+| Teste de busca em profundidade                  | ✅       | Gabriel  | -          |
+| Busca Naive por ponte                           | ✅       | Gabriel  | -          |
+| Algoritmo para gerar grafos aleatórios vertices | ✅       | Gabriel  | -          |
+| Salvamento de grafo em arquivo                  | ❌       |          | -          |
+| Algoritmo de Fleury                             | ❌       | Breno    | -          |
+| Algoritmo de Tarjan                             | ❌       | Luís     | -          |
+| Testes de tempo de processamento de Fleury      | ❌       |          | -          |
+|                                                 | ❌       |          | -          |
+|                                                 | ❌       |          | -          |
+
+## [ RELATORIO EM LATEX]
+| Tarefa                                      | Situação | Quem Fez | Observação |
+| ------------------------------------------- | -------- | -------- | ---------- |
+| Formatação                                  | ✅       | Rúbia    | -          |
+| Introdução                                  | ❌       | Rúbia    | -          |
+| Objetivo                                    | ❌       | Rúbia    | -          |
+| Metodologia                                 | ❌       | Rúbia    | -          |
+| Desenvolvimento::Biblioteca de manipulação  | ❌       | Gabriel  | -          |
+| Desenvolvimento::Busca por ponte Naive      | ❌       | Gabriel  | -          |
+| Desenvolvimento::Busca por ponte TarJan     | ❌       | Luis     | -          |
+| Desenvolvimento::Fleury e caminho euleriano | ❌       | Breno    | -          |
+| Conclusão                                   | ❌       | Rúbia    | -          |
+| Referências                                 | ✅       | Rúbia    | -          |
+

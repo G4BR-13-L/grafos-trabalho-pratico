@@ -1,48 +1,59 @@
-@startuml Diagrama de Classe
+@startuml DiagramaDeClasse
 
 
 class GraphMatrix{
-    + int[][] matrix
-    + int n_vertices
-    + GraphMatrix(int n_vertices)
+    + matrix: int[][]
+    + matrix_peso_vertice: int[]
+    + n_vertice: int
+    + GraphMatrix(int n_vertices):void
     - preencherMatrizComZeros():void
     + getQuantidadeDeArestasNaMatriz():int
     + existeVerticeNaMatriz(int v_find):boolean
-    + existeArestNaMatriz(int v_origem, int v_destino):boolean
+    + existeArestaNaMatriz(int v_origem, int v_destino):boolean
     + getQuantidadeVerticesNaMatriz():int
     + getQuantidadeArestas():int
     + addArestaNaMatriz(int v_origem, int v_destino):void
+    + addArestaNaMatriz(int v_origem, int v_destino, int peso):void
     + rmArestaDaMatriz(int v_origem, int v_destino):void
-    + ponderarVertice(int rotulo, int peso): void
-    + ponderarAresta(int v_origem, int v_destino, int peso): void
-    + existeAdjacenciaEntreOsVertices(int v_origem, int v_destino): boolean
-    + isVazio(): boolean
-    + isCompleto(): boolean
-    + isArestasAdjacentes(int v_origem, int v_destino, int w_origem, int w_destino): boolean
+    + ponderarVertice(int rotulo, int peso):void
+    + ponderarAresta(int v_origem, int v_destino, int peso):void
+    + existeAdjacenciaEntreOsVertices(int v_origem, int v_destino):boolean
+    + isVazio():boolean
+    + isCompleto():boolean
+    + isArestasAdjacentes(int v_origem, int v_destino, int w_origem, int w_destino):boolean
 }
 
 class Graph{
     + n_vertices: int
     + vertices: List<Vertice>
     + arestas: List<Aresta>
-    + ROTULOS_VERTICE: int  = 0
-    + ROTULOS_ARESTA: int  = 0
-    + Graph(int n_vertices)
+    + ROTULOS_VERTICE: int = 0
+    + ROTULOS_ARESTA: int = 0
+    + tabela_busca_profundidade: Tabela
+    + Graph(int n_vertices):void
     + GerarListaDeAdjacencia(): void
-    + GerarListaDeAdjacenciaAPartirDaMatriz() : void
+    + GerarListaDeAdjacenciaAPartirDaMatriz(): void
     - existeVertice(int v_find): boolean
-    + existeAresta(int v_origem, int v_destino): boolean
-    + addAresta(int v_origem, int v_destino) : void
+    + existeAdjacenciaEntreOsVertices(int v_origem, int v_destino): boolean
+    + addAresta(int v_origem, int v_destino): void
+    + addAresta(Aresta aresta: void
     + rmAresta(int v_origem, int v_destino): void
-    + toString() : String
-    + getQuantidadeArestas(): int
     + getQuantidadeVertices(): int
+    + getQuantidadeArestas(): int
     + ponderarVertice(int rotulo, int peso): void
     + ponderarAresta(int v_origem, int v_destino, int peso): void
     + getAresta(int v_origem, int v_destino): Aresta
+    + getArestaFromList(int index: Aresta
     + isVazio(): boolean
     + isCompleto(): boolean
     + isArestasAdjacentes(int v_origem, int v_destino, int w_origem, int w_destino): boolean
+    + toString(): String
+    + ExecutarBuscaEmProfundidade(boolean print_tabela: void
+    + ExecutarBuscaEmProfundidade(): void
+    - BuscaEmProfundidade( int v ):void
+    + ExecutarNaiveBridgeFind(): boolean
+    + buscaNaive(): void
+
 }
 class Vertice {
     + rotulo: int
@@ -62,13 +73,33 @@ class Aresta {
     + Aresta(int rotulo, int rotuloVerticeV, int rotuloVerticeW)
 }
 
-class GraphDinamic{
-
+class Tabela {
+    +  T: int
+    +  TD: int[]
+    +  TT: int[]
+    +  pai: int[]
+    +  isCompleta: boolean
+    +  n_vertices: int
+    + Tabela(int vertices) : void
+    +  zerarTabela(int vertices) : void
+    +  aindaHaVerticesParaExplorar(): boolean
+    +  proximoVerticeAExplorar(): int
+    +  toString(): String
 }
+' class GraphIO{
+'     + readGraph(String filepath): Graph
+' }
+' class GraphGenerator{
+'     +  generateGraph(int vertices, int min_aresta_por_vertice, int max_aresta_por_vertice): Graph
+'     - quantasArestasTeraOVertice( int min_aresta_por_vertice, int max_aresta_por_vertice): int
+'     - qualAListaDeVerticesParaConectar(int qtd_arestas, int qtd_vertices): int[]
+'     - existeNaLista(int[] v, int n): boolean
+' }
 
 GraphMatrix <|-- Graph
-Graph <|-- GraphDinamic
 Graph o-- Aresta
 Graph o-- Vertice
+Graph -- Tabela
+' GraphIO -[hidden]- GraphGenerator
 
 @enduml

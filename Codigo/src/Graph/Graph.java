@@ -138,6 +138,17 @@ public class Graph extends GraphMatrix {
     }
 
     /**
+     * Adiciona uma aresta nova a partir da instancia de um ]
+     * objeto aresta
+     * @param aresta
+     */
+    public void addAresta(Aresta aresta){
+        this.addAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW);
+        this.ponderarAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW, aresta.peso);
+        super.addArestaNaMatriz(aresta.rotuloVerticeV, aresta.rotulo, aresta.peso);
+    }
+
+    /**
      * Remove a relação bidireciona ( aresta ), de 2 vertices
      * passados como parâmetro
      * 
@@ -273,6 +284,15 @@ public class Graph extends GraphMatrix {
     }
 
     /**
+     * Retorna uma aresta de uma posição da lista de arestas.
+     * @param index
+     * @return
+     */
+    public Aresta getArestaFromList(int index){
+        return this.arestas.get(index);
+    }
+
+    /**
      * Nos diz se existem vertices no grafo
      * Caso não existam vertices, ele retorna true;
      * 
@@ -358,6 +378,7 @@ public class Graph extends GraphMatrix {
     //=========================================================================
 
 
+    /* -------------------------- BUSCA EM PROFUNDIDADE ------------------------- */
     public void ExecutarBuscaEmProfundidade(boolean print_tabela){
         ExecutarBuscaEmProfundidade();
         System.out.println(this.tabela_busca_profundidade.toString());
@@ -386,10 +407,27 @@ public class Graph extends GraphMatrix {
         }
     }
 
+ /* --------------------- Busca Naive por ponte no Grafo --------------------- */
+    public boolean ExecutarNaiveBridgeFind() {
+        this.BuscaEmProfundidade(this.tabela_busca_profundidade.proximoVerticeAExplorar());
+        if (this.tabela_busca_profundidade.aindaHaVerticesParaExplorar()) {
+            return false;
+        }
+        return true;
+    }
 
-
-
-
+    public void buscaNaive() {
+        for (int k = 0; k < this.getQuantidadeArestas(); k++) {
+            Aresta aresta = this.arestas.get(k);
+            this.rmAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW);
+            if (ExecutarNaiveBridgeFind()) {
+                System.out.println("Ponte Encontrada: \n" + aresta.toString());
+                this.addAresta(aresta);
+                return;
+            }
+            this.addAresta(aresta);
+        }
+    }
 
 
 
@@ -452,7 +490,6 @@ public class Graph extends GraphMatrix {
             adj[i] = new ArrayList<>();
         }
     }
-
 
 
 }

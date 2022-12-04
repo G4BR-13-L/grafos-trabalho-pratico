@@ -1,0 +1,14 @@
+@startuml Diagrama de Classe do GraphGenerator
+
+
+
+class GraphGenerator{
+    +  generateGraph(int vertices, int min_aresta_por_vertice, int max_aresta_por_vertice): Graph
+    - quantasArestasTeraOVertice( int min_aresta_por_vertice, int max_aresta_por_vertice): int
+    - qualAListaDeVerticesParaConectar(int qtd_arestas, int qtd_vertices): int[]
+    - existeNaLista(int[] v, int n): boolean
+}
+
+
+
+@enduml
