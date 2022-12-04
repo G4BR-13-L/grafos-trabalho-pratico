@@ -73,12 +73,13 @@ grafos grafos aleatórios contendo 100, 1000, 10000 e 100000 vértices.
 | Tarefa                                      | Situação | Quem Fez | Observação |
 | ------------------------------------------- | -------- | -------- | ---------- |
 | Formatação                                  | ✅       | Rúbia    | -          |
-| Introdução                                  | ❌       |          | -          |
-| Objetivo                                    | ❌       |          | -          |
-| Metodologia                                 | ❌       |          | -          |
-| Desenvolvimento::Biblioteca de manipulação  | ❌       |          | -          |
-| Desenvolvimento::Busca por ponte            | ❌       |          | -          |
-| Desenvolvimento::Fleury e caminho euleriano | ❌       |          | -          |
-| Conclusão                                   | ❌       |          | -          |
-| Referências                                 | ❌       |          | -          |
+| Introdução                                  | ❌       | Rúbia    | -          |
+| Objetivo                                    | ❌       | Rúbia    | -          |
+| Metodologia                                 | ❌       | Rúbia    | -          |
+| Desenvolvimento::Biblioteca de manipulação  | ❌       | Gabriel  | -          |
+| Desenvolvimento::Busca por ponte Naive      | ❌       | Gabriel  | -          |
+| Desenvolvimento::Busca por ponte TarJan     | ❌       | Luis     | -          |
+| Desenvolvimento::Fleury e caminho euleriano | ❌       | Breno    | -          |
+| Conclusão                                   | ❌       | Rúbia    | -          |
+| Referências                                 | ✅       | Rúbia    | -          |
 

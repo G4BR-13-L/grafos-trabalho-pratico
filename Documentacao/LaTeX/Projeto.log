@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.17)  3 DEC 2022 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.17)  3 DEC 2022 21:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -589,7 +589,7 @@ Package: paralist 2017/01/22 v2.7 Extended list environments
 \plparsep=\skip100
 \pl@lab=\toks43
 )
-Package caption Info: Option `figurewithin=none' requires the `newfloat' package on input line 95.
+Package caption Info: Option `figurewithin=none' requires the `newfloat' package on input line 94.
  (c:/texlive/2022/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
 Package newfloat Info: Unsupported document class, or \@chapter 
@@ -624,30 +624,30 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 \citation{abnt-etal-cite=1}
 \citation{abnt-and-type=e}
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 161.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 160.
 (c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count342
 \l__pdf_internal_box=\box127
-) (./Projeto.aux (./pre-texto/resumo.aux) (./texto/introducao.aux) (./texto/revisao.aux) (./texto/metodologia.aux) (./texto/capEx1.aux) (./texto/capEx2.aux) (./texto/capEx3.aux))
+) (./Projeto.aux (./pre-texto/resumo.aux) (./texto/introducao.aux) (./texto/revisao.aux) (./texto/Desenvolvimento.aux) (./texto/capEx1.aux) (./texto/capEx2.aux) (./texto/capEx3.aux))
 \openout1 = `Projeto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -702,37 +702,37 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 161.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 160.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 161.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 160.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 161.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 160.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 161.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 160.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 161.
+(Font)              <12> on input line 160.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 161.
+(Font)              <8> on input line 160.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 161.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 161.
+(Font)              <6> on input line 160.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 160.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 161.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 160.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.39998pt on input line 161.
+Package xypdf Info: Line width: 0.39998pt on input line 160.
 \c@lstlisting=\count349
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -742,19 +742,14 @@ Package newfloat Info: `float' package detected.
 <imagem/logo_puc.png, id=1, 200.75pt x 200.75pt>
 File: imagem/logo_puc.png Graphic file (type png)
 <use imagem/logo_puc.png>
-Package pdftex.def Info: imagem/logo_puc.png  used on input line 189.
+Package pdftex.def Info: imagem/logo_puc.png  used on input line 188.
 (pdftex.def)             Requested size: 50.07712pt x 50.07709pt.
  [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./imagem/logo_puc.png>] [1]
 \openout2 = `pre-texto/resumo.aux'.
 
- (./pre-texto/resumo.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
-
- []
-
-[3
+ (./pre-texto/resumo.tex [3
 
 
 
@@ -769,13 +764,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
 ]
 \openout2 = `texto/introducao.aux'.
 
- (./texto/introducao.tex
+ (./texto/Introducao.tex
 Cap\'{\i }tulo 1.
 Package newfloat Info: Setting Plan B file extension to `loa'... on input line 1.
-
-LaTeX Warning: Reference `revisao' on page 25 undefined on input line 11.
-
-) [25
+) [1
 
 
 
@@ -784,266 +776,79 @@ LaTeX Warning: Reference `revisao' on page 25 undefined on input line 11.
 
  (./texto/revisao.tex
 Cap\'{\i }tulo 2.
-) [26
+) [2
 
 
 
 
 ]
-\openout2 = `texto/metodologia.aux'.
+\openout2 = `texto/Desenvolvimento.aux'.
 
- (./texto/metodologia.tex
+ (./texto/Desenvolvimento.tex
 Cap\'{\i }tulo 3.
-) [27
+
+Underfull \vbox (badness 1264) has occurred while \output is active []
+
+ [3
 
 
 
 
 ]
+<DiagramaDeClasse/DiagramaDeClasse.png, id=32, 987.69pt x 1320.935pt>
+File: DiagramaDeClasse/DiagramaDeClasse.png Graphic file (type png)
+<use DiagramaDeClasse/DiagramaDeClasse.png>
+Package pdftex.def Info: DiagramaDeClasse/DiagramaDeClasse.png  used on input line 26.
+(pdftex.def)             Requested size: 273.14923pt x 365.30406pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 31.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 31.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 31.
+
+
+LaTeX Warning: Citation `imagemSoftware' on page 4 undefined on input line 31.
+
+
+Underfull \vbox (badness 1342) has occurred while \output is active []
+
+ [4 <./DiagramaDeClasse/DiagramaDeClasse.png (PNG copy)>]) [5]
 \openout2 = `texto/capEx1.aux'.
 
  (./texto/capEx1.tex
 Cap\'{\i }tulo 4.
-./texto/capEx1.tex:16: Undefined control sequence.
-<argument> ...iteyear \@}\@\else {\authorcapstyle 
-                                                  \@citename }, {\yearstyle ...
-l.16 ...ado no exemplo a seguir. \cite{Duato:2002}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:16: Undefined control sequence.
-<argument> ...rcapstyle \@citename }, {\yearstyle 
-                                                  \@citeyear \@}\fi \let \@c...
-l.16 ...ado no exemplo a seguir. \cite{Duato:2002}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:19: Undefined control sequence.
-<argument> ... \@citeprevious \else {\authorstyle 
-                                                  \@citename \@{}} \citeopen...
-l.19   Conforme \citeonline{Bjerregaard:2006}
-                                             , o estudo mencionado revela pr...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:19: Undefined control sequence.
-<argument> ...ame \@{}} \citeopen \fi {\yearstyle 
-                                                  \@citeyear \@}\let \@citep...
-l.19   Conforme \citeonline{Bjerregaard:2006}
-                                             , o estudo mencionado revela pr...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:23: Undefined control sequence.
-<argument> ...iteyear \@}\@\else {\authorcapstyle 
-                                                  \@citename }, {\yearstyle ...
-l.23 ...\cite{Keyes:2008, Zhao:2008, Ganguly:2011}
-                                                  . Se houver necessidade de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:23: Undefined control sequence.
-<argument> ...rcapstyle \@citename }, {\yearstyle 
-                                                  \@citeyear \@}\fi \let \@c...
-l.23 ...\cite{Keyes:2008, Zhao:2008, Ganguly:2011}
-                                                  . Se houver necessidade de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:23: Undefined control sequence.
-<argument> ...iteyear \@}\@\else {\authorcapstyle 
-                                                  \@citename }, {\yearstyle ...
-l.23 ...\cite{Keyes:2008, Zhao:2008, Ganguly:2011}
-                                                  . Se houver necessidade de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:23: Undefined control sequence.
-<argument> ...rcapstyle \@citename }, {\yearstyle 
-                                                  \@citeyear \@}\fi \let \@c...
-l.23 ...\cite{Keyes:2008, Zhao:2008, Ganguly:2011}
-                                                  . Se houver necessidade de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:23: Undefined control sequence.
-<argument> ...iteyear \@}\@\else {\authorcapstyle 
-                                                  \@citename }, {\yearstyle ...
-l.23 ...\cite{Keyes:2008, Zhao:2008, Ganguly:2011}
-                                                  . Se houver necessidade de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:23: Undefined control sequence.
-<argument> ...rcapstyle \@citename }, {\yearstyle 
-                                                  \@citeyear \@}\fi \let \@c...
-l.23 ...\cite{Keyes:2008, Zhao:2008, Ganguly:2011}
-                                                  . Se houver necessidade de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:24: Undefined control sequence.
-<argument> ...iteyear \@}\@\else {\authorcapstyle 
-                                                  \@citename }, {\yearstyle ...
-l.24 ...\cite[p.~2, tradução nossa]{Sasaki:2009}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:24: Undefined control sequence.
-<argument> ...rcapstyle \@citename }, {\yearstyle 
-                                                  \@citeyear \@}\fi \let \@c...
-l.24 ...\cite[p.~2, tradução nossa]{Sasaki:2009}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:26: Undefined control sequence.
-<argument> ...iteyear \@}\@\else {\authorcapstyle 
-                                                  \@citename }, {\yearstyle ...
-l.26 ... de entrada.''~\cite[p. 160]{Menasce:2002}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx1.tex:26: Undefined control sequence.
-<argument> ...rcapstyle \@citename }, {\yearstyle 
-                                                  \@citeyear \@}\fi \let \@c...
-l.26 ... de entrada.''~\cite[p. 160]{Menasce:2002}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28
+) [6
 
 
 
 
-]) [29]
+]
 \openout2 = `texto/capEx2.aux'.
 
  (./texto/capEx2.tex
 Cap\'{\i }tulo 5.
-<imagem/winoc.jpg, id=39, 347.49825pt x 140.32425pt>
+<imagem/winoc.jpg, id=43, 347.49825pt x 140.32425pt>
 File: imagem/winoc.jpg Graphic file (type jpg)
 <use imagem/winoc.jpg>
 Package pdftex.def Info: imagem/winoc.jpg  used on input line 23.
 (pdftex.def)             Requested size: 386.96027pt x 156.27135pt.
-./texto/capEx2.tex:26: Undefined control sequence.
-<argument> ...iteyear \@}\@\else {\authorcapstyle 
-                                                  \@citename }, {\yearstyle ...
-l.26 ...textbf{\\Fonte: \cite{OliveiraIadis:2011}}
-                                                  }}	
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx2.tex:26: Undefined control sequence.
-<argument> ...rcapstyle \@citename }, {\yearstyle 
-                                                  \@citeyear \@}\fi \let \@c...
-l.26 ...textbf{\\Fonte: \cite{OliveiraIadis:2011}}
-                                                  }}	
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 26.
-<imagem/graficos/grafico_pacotes_enviados_bt.png, id=40, 355.3275pt x 298.86656pt>
+<imagem/graficos/grafico_pacotes_enviados_bt.png, id=44, 355.3275pt x 298.86656pt>
 File: imagem/graficos/grafico_pacotes_enviados_bt.png Graphic file (type png)
 <use imagem/graficos/grafico_pacotes_enviados_bt.png>
 Package pdftex.def Info: imagem/graficos/grafico_pacotes_enviados_bt.png  used on input line 44.
 (pdftex.def)             Requested size: 218.51521pt x 183.79955pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 48.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30
+ [7
 
 
 
 
- <./imagem/winoc.jpg>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 68.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 68.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 68.
-
-./texto/capEx2.tex:83: Undefined control sequence.
-<argument> ...iteyear \@}\@\else {\authorcapstyle 
-                                                  \@citename }, {\yearstyle ...
-l.83 ...xtbf{\\Fonte: Adaptado de \cite{Nas:2011}}
-                                                  }}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./texto/capEx2.tex:83: Undefined control sequence.
-<argument> ...rcapstyle \@citename }, {\yearstyle 
-                                                  \@citeyear \@}\fi \let \@c...
-l.83 ...xtbf{\\Fonte: Adaptado de \cite{Nas:2011}}
-                                                  }}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) [31 <./imagem/graficos/grafico_pacotes_enviados_bt.png>]
+ <./imagem/winoc.jpg>]) [8 <./imagem/graficos/grafico_pacotes_enviados_bt.png>]
 \openout2 = `texto/capEx3.aux'.
 
  (./texto/capEx3.tex
@@ -1053,20 +858,14 @@ Overfull \hbox (12.42386pt too wide) in paragraph at lines 25--28
 []\T1/lmr/m/n/12 No Ubuntu o ar-quivo fica ar-ma-ze-nado em \T1/lmr/m/it/12 /usr/share/texmf-texlive/tex/latex/acronym\T1/lmr/m/n/12 .
  []
 
-) [32
+) [9
 
 
 
 
 ] (./Projeto.bbl
 
-LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 12.
-
-
-Underfull \hbox (badness 2205) in paragraph at lines 46--48
-[]\T1/lmr/m/n/12 NPB. \T1/lmr/bx/sc/12 NAS Pa-ral-lel Ben-ch-marks\T1/lmr/m/n/12 . Dis-po-n�-vel em 
- []
+LaTeX Warning: Empty `thebibliography' environment on input line 8.
 
 )
 +-------------------------------------------------------------------+
@@ -1074,42 +873,39 @@ Underfull \hbox (badness 2205) in paragraph at lines 46--48
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
 
-Package caption Warning: Unused \captionsetup[subfloat] on input line 89.
+Package caption Warning: Unused \captionsetup[subfloat] on input line 88.
 See the caption package documentation for explanation.
 
 
-Package caption Warning: Unused \captionsetup[subgrafico] on input line 116.
+Package caption Warning: Unused \captionsetup[subgrafico] on input line 115.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: Unused \captionsetup[grafico] on input line 46.
 See the caption package documentation for explanation.
 
-[33
+[10
 
 
 
-] (./Projeto.aux (./pre-texto/resumo.aux) (./texto/introducao.aux) (./texto/revisao.aux) (./texto/metodologia.aux) (./texto/capEx1.aux) (./texto/capEx2.aux) (./texto/capEx3.aux))
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+] (./Projeto.aux (./pre-texto/resumo.aux) (./texto/introducao.aux) (./texto/revisao.aux) (./texto/Desenvolvimento.aux) (./texto/capEx1.aux) (./texto/capEx2.aux) (./texto/capEx3.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14117 strings out of 474971
- 223063 string characters out of 5780120
- 649756 words of memory out of 5000000
- 35256 multiletter control sequences out of 15000+600000
- 548007 words of font info for 96 fonts, out of 8000000 for 9000
+ 14098 strings out of 474971
+ 222937 string characters out of 5780120
+ 649197 words of memory out of 5000000
+ 35230 multiletter control sequences out of 15000+600000
+ 558996 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,16n,68p,3449b,391s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Projeto.pdf (13 pages, 320630 bytes).
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on Projeto.pdf (14 pages, 428753 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
