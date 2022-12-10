@@ -41,12 +41,37 @@ A Organização de todo o sistema pode ser representada pelo seguinte diagrama d
 	\includegraphics[width=1\textwidth]{DiagramaDeClasse/DiagramaDeClasse.png}
 	% Caption centralizada
 	\captionsetup{justification=centering}
-	%\captionfont{\small{\textbf{\\Fonte: }}}}	
 	\label{fig:DiagramaDeClasse}
 \end{figure}
 
-\section{Ciclo Euleriano}
+\section{Busca Naive}
 
+A busca Naive funciona com base em uma busca em profundidade. Um algoritmo ingênuo que busca pontes em um grafo não direcionado apenas levando em 
+consideração a quantidade de vezes que teve que recomeçar a busca no caso de encerrar a exploração de uma árvore e ainda existirem vértices a serem 
+explorados.
+
+Esse tipo de abordagem não produz resultados precisos pois a cada execução, e a depender do vértice inicial, o algoritmo pode produzir resultados 
+diferentes, podendo encontrar pontes em grafos fortemente-conexos e não encontrar nenhuma ponte em grafos simplesmente conexos. Isso porque, o algoritmo 
+ingênuo é implementado de tal forma que testa a conectividade do grafo, através da busca em profundidade, após remover e repor arestas do grafo. Ele 
+executa desta forma para todas as arestas de um grafo não direcionado.
+
+\section{Algoritmo de Tarjan}
+
+Parte da proposta do trabalho foi a implementação do método de Tarjan para encontrar pontes em um grafo.
+Inicialmente o algoritmo foi desenvolvido em um classe separada que herdava suas propriedades da classe Graph. O método consiste em realizar uma busca em 
+largura, porém se atentando aos seguintes detalhes:
+
+- Em uma aresta (v,w), onde v representa o vértice pai e atual descoberto pela busca e w o vértice filho que ainda será visitado, tal aresta será uma 
+ponte caso não haja nenhuma outra aresta alternativa para alcançar v ou um acenstral de v com raiz em w.
+
+Para verificar essas condições, o código armazena o tempo em que o primeiro vértice acessível a partir de uma sub-árvore gerada pela busca com raiz em x 
+(sendo x um dos vértices do grafo) é visitado em um vetor low[x]. Para uma aresta (v,w) ser caracterizada como ponte durante o agoritmo de busca, o tempo 
+de descoberta do vértice v deve ser menor que low[w], ou TD[v] < low[w].
+
+Após os testes feitos, comparado as buscas de um mesmo grafo com outros algoritmos (como o naive), os métodos foram transferidos para a classe Graph 
+principal.
+
+\section{Ciclo Euleriano}
 
 Passa uma única vez por cada aresta no grafo, partindo e chegando a um mesmo vértice.
 
@@ -80,135 +105,5 @@ Passo a passo para um grafo não dirigido e não valorado
 	\item Caso contrário, imprima o caminho percorrido.
 \end{enumerate}
 
-Exemplos do passo a passo do algoritmo funcionando:
 
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-25.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-26.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-27.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-28.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-29.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-30.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-31.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-32.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-33.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-34.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-35.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-36.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-37.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-38.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-39.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-40.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-41.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-42.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-43.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-44.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-45.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-46.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-47.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-48.png}
-	\end{subfigure}
-\end{figure}
-\begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-49.png}
-	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-50.png}
-	\end{subfigure}
-\end{figure}
+

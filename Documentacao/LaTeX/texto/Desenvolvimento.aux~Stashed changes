@@ -1,0 +1,58 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Desenvolvimento}{2}{}\protected@file@percent }
+\newlabel{metodo}{{2}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {\normalfont  \mathversion  {bold}\bfseries  2.1}\normalfont  \textbf  {\mathversion  {bold}Biblioteca de manipulação de grafos}}{2}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de Classe}}{3}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:DiagramaDeClasse}{{1}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {\normalfont  \mathversion  {bold}\bfseries  2.2}\normalfont  \textbf  {\mathversion  {bold}Busca Naive}}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {\normalfont  \mathversion  {bold}\bfseries  2.3}\normalfont  \textbf  {\mathversion  {bold}Algoritmo de Tarjan}}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {\normalfont  \mathversion  {bold}\bfseries  2.4}\normalfont  \textbf  {\mathversion  {bold}Ciclo Euleriano}}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {\normalfont  \mathversion  {bold}\bfseries  2.5}\normalfont  \textbf  {\mathversion  {bold}Algoritmo de Fleury}}{5}{}\protected@file@percent }
+\@setckpt{texto/Desenvolvimento}{
+\setcounter{page}{6}
+\setcounter{equation}{0}
+\setcounter{enumi}{6}
+\setcounter{enumii}{2}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{2}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{1}
+\setcounter{table}{0}
+\setcounter{caption@flags}{2}
+\setcounter{continuedfloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{ABCIaux}{0}
+\setcounter{ABCImax}{0}
+\setcounter{float@type}{16}
+\setcounter{parentequation}{0}
+\setcounter{AlgoLine}{0}
+\setcounter{algocfline}{0}
+\setcounter{algocfproc}{0}
+\setcounter{algocf}{0}
+\setcounter{ALC@unique}{0}
+\setcounter{ALC@line}{0}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{lstnumber}{1}
+\setcounter{r@tfl@t}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{grafico}{0}
+\setcounter{KVtest}{0}
+\setcounter{subgrafico}{0}
+\setcounter{subgrafico@save}{0}
+\setcounter{loqdepth}{1}
+\setcounter{lstlisting}{0}
+}

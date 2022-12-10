@@ -1,9 +1,13 @@
-% Modelo de Dissertação do Mestrado em Informática da PUC - Alterado para cumprir a normalização de 2011
 %\documentclass[a4paper,brazil,ruledheader,normaltoc,capchap]{abnt}
 
 % Para impressão frente e verso (normalização 2011)
 \documentclass[a4paper,brazil,ruledheader,normaltoc,capchap,twoside,openany]{abnt_pucmg_utf8}
 
+\usepackage{tikz}
+\usepackage{aeguill}
+\usepackage{subcaption}
+\usepackage{subfigure}
+%
 % Não esquecer das alterações no arquivo abnt.cls
 % Se estiver usando o Kile no Ubuntu o arquivo fica armazenado em /usr/share/texmf/tex/latex/abntex.
 % Comentar a linha 967 
@@ -22,8 +26,6 @@
 
 % Pacote para definir explicitamente as margens das páginas
 \usepackage[a4paper,left=3cm,right=2cm,top=3cm,bottom=2cm]{geometry}
-
-\usepackage{tikz}
 
 %\usepackage{units}
 % Utilize da seguinte forma \unit[78,6]{mA}
@@ -45,13 +47,12 @@
 % Pacote para múltiplos arquivos .bib
 %\usepackage{multibib}
 %\newcites{pub}{Refer\^encias das publica\c{c}\~oes}
+
 % Pacote de adequação do formato ABNT para normas da PUCMinas
 \usepackage{abnt-PPGInf-PUCMG}
 
 % Pacotes utilitários
 \usepackage{graphicx}
-\usepackage{subcaption}
-\usepackage{subfigure}
 
 % Pacote para fixar a figura no local desejado
 \usepackage{float}
@@ -215,7 +216,7 @@
 %\include{pre-texto/epigrafe}
 
 % Resumo
-\include{pre-texto/resumo}
+%\include{pre-texto/resumo}
 
 % Abstract
 %\include{pre-texto/abstract}
@@ -271,6 +272,7 @@
 
 % Altera para espaçamento simples a partir daqui
 \singlespacing
+\maketitle
 
 % Sumário
 \tableofcontents
@@ -290,11 +292,11 @@
 \include{texto/introducao}
 % Os demais capítulos não precisam começar no anverso
 \setboolean{@openright}{false}
-\include{texto/revisao}
+%\include{texto/revisao}
 \include{texto/Desenvolvimento}
-\include{texto/capEx1}
-\include{texto/capEx2}
-\include{texto/capEx3}
+% \include{texto/capEx1}
+% \include{texto/capEx2}
+% \include{texto/capEx3}
 
 % PÓS-TEXTUAIS %%
 % Bibliografia no arquivo 'Dissertacao.bib'
