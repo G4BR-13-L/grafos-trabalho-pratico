@@ -32,17 +32,17 @@ escritos utilizando a biblioteca Junit do próprio Java.
 A Organização de todo o sistema pode ser representada pelo seguinte diagrama de classe:
 
 \begin{figure}[H]
-    % Alterar espaçamentos antes e depois do caption
-    \setlength{\abovecaptionskip}{0pt}
-    \setlength{\belowcaptionskip}{0pt}
-    % Caption
-    \caption[Diagrama de Classe]{Diagrama de Classe}
-    \centering
-    \includegraphics[width=1\textwidth]{DiagramaDeClasse/DiagramaDeClasse.png}
-    % Caption centralizada
-    \captionsetup{justification=centering}
-    %\captionfont{\small{\textbf{\\Fonte: }}}}	
-    \label{fig:DiagramaDeClasse}
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Caption
+	\caption[Diagrama de Classe]{Diagrama de Classe}
+	\centering
+	\includegraphics[width=1\textwidth]{DiagramaDeClasse/DiagramaDeClasse.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	%\captionfont{\small{\textbf{\\Fonte: }}}}	
+	\label{fig:DiagramaDeClasse}
 \end{figure}
 
 \section{Ciclo Euleriano}
@@ -51,14 +51,14 @@ A Organização de todo o sistema pode ser representada pelo seguinte diagrama d
 Passa uma única vez por cada aresta no grafo, partindo e chegando a um mesmo vértice.
 
 \begin{itemize}
-    \item Para haver um ciclo euleriano, todo vértice deve ter grau par, como já discutimos.
+	\item Para haver um ciclo euleriano, todo vértice deve ter grau par, como já discutimos.
 \end{itemize}
 
 O algoritmo de Fleury, proposto em 1883, utiliza um grafo reduzido induzido pelas arestas ainda não marcadas
 
 \begin{itemize}
-    \item Inicialmente todas as arestas estão não marcadas.
-    \item As arestas vão sendo "marcadas", ou removidas do grafo, a medida em que vão sendo inseridas no ciclo
+	\item Inicialmente todas as arestas estão não marcadas.
+	\item As arestas vão sendo "marcadas", ou removidas do grafo, a medida em que vão sendo inseridas no ciclo
 \end{itemize}
 
 Regra da ponte: se uma aresta {v, w} é uma ponte no grafo reduzido, então {v, w} só deve ser escolhida caso não haja outra opção.
@@ -68,120 +68,149 @@ Regra da ponte: se uma aresta {v, w} é uma ponte no grafo reduzido, então {v, 
 Passo a passo para um grafo não dirigido e não valorado
 
 \begin{enumerate}
-    \item Verifique se o grafo apresenta as condições para ter um ciclo euleriano
-    \item Caso positivo, escolha um vértice V1 para começar.
-    \item Entre os vértices adjacentes a V1, faça
-          \begin{enumerate}
-              \item Se há apenas um vértice como opção, escolha este como V2.
-              \item Se há mais de um vértice possível, escolha um V2 apropriado dentre eles (ou seja, um que “não repita a ponte”).
-          \end{enumerate}
-    \item Remova a aresta (V1, V2).
-    \item Se ainda houver arestas não percorridas, volte ao passo 3, partindo agora de V2 (V2 é o novo V1).
-    \item Caso contrário, imprima o caminho percorrido.
+	\item Verifique se o grafo apresenta as condições para ter um ciclo euleriano
+	\item Caso positivo, escolha um vértice V1 para começar.
+	\item Entre os vértices adjacentes a V1, faça
+	      \begin{enumerate}
+		      \item Se há apenas um vértice como opção, escolha este como V2.
+		      \item Se há mais de um vértice possível, escolha um V2 apropriado dentre eles (ou seja, um que “não repita a ponte”).
+	      \end{enumerate}
+	\item Remova a aresta (V1, V2).
+	\item Se ainda houver arestas não percorridas, volte ao passo 3, partindo agora de V2 (V2 é o novo V1).
+	\item Caso contrário, imprima o caminho percorrido.
 \end{enumerate}
 
 Exemplos do passo a passo do algoritmo funcionando:
 
-    \label{fig:PassoPasso}
-    \begin{subfigure}{.4\textwidth}
+
+
+\begin{figure}[htbp]
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-25.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-26.png}
 	\end{subfigure}
+\end{figure}
 \begin{figure}[htbp]
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-27.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-28.png}
 	\end{subfigure}
 \end{figure}
 \begin{figure}[htbp]
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-29.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-30.png}
 	\end{subfigure}
-\end{figure} 
+\end{figure}
 \begin{figure}[htbp]
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-31.png}
-	\end{subfigure} 
-    \begin{subfigure}{.4\textwidth}
+	\end{subfigure}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-32.png}
 	\end{subfigure}
 \end{figure}
 \begin{figure}[htbp]
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-33.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-34.png}
 	\end{subfigure}
 \end{figure}
 \begin{figure}[htbp]
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-35.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-36.png}
 	\end{subfigure}
 \end{figure}
 \begin{figure}[htbp]
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-37.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-38.png}
 	\end{subfigure}
 \end{figure}
-\begin{figure}[htbp]  
-    \begin{subfigure}{.4\textwidth}
+\begin{figure}[htbp]
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-39.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-40.png}
 	\end{subfigure}
-\end{figure}  
-\begin{figure}[htbp]  
-    \begin{subfigure}{.4\textwidth}
+\end{figure}
+\begin{figure}[htbp]
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-41.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-42.png}
 	\end{subfigure}
-\end{figure}    
-\begin{figure}[htbp]  
-    \begin{subfigure}{.4\textwidth}
+\end{figure}
+\begin{figure}[htbp]
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-43.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-44.png}
 	\end{subfigure}
-\end{figure}    
-\begin{figure}[htbp]  
-    \begin{subfigure}{.4\textwidth}
+\end{figure}
+\begin{figure}[htbp]
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-45.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-46.png}
 	\end{subfigure}
-\end{figure}    
-\begin{figure}[htbp]  
-    \begin{subfigure}{.4\textwidth}
+\end{figure}
+\begin{figure}[htbp]
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-47.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-48.png}
 	\end{subfigure}
-\end{figure}      
-\begin{figure}[htbp]  
-    \begin{subfigure}{.4\textwidth}
+\end{figure}
+\begin{figure}[htbp]
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-49.png}
 	\end{subfigure}
-    \begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-50.png}
 	\end{subfigure}
 \end{figure}
