@@ -53,6 +53,8 @@ class Graph{
     - BuscaEmProfundidade( int v ):void
     + ExecutarNaiveBridgeFind(): boolean
     + buscaNaive(): void
+    + executarBuscarPontes(): void
+    - BuscarPontes(int v) : void
 
 }
 class Vertice {
@@ -87,14 +89,16 @@ class Tabela {
     +  toString(): String
 }
 ' class GraphIO{
-'     + readGraph(String filepath): Graph
-' }
+    '     + readGraph(String filepath): Graph
+    '
+}
 ' class GraphGenerator{
-'     +  generateGraph(int vertices, int min_aresta_por_vertice, int max_aresta_por_vertice): Graph
-'     - quantasArestasTeraOVertice( int min_aresta_por_vertice, int max_aresta_por_vertice): int
-'     - qualAListaDeVerticesParaConectar(int qtd_arestas, int qtd_vertices): int[]
-'     - existeNaLista(int[] v, int n): boolean
-' }
+    '     +  generateGraph(int vertices, int min_aresta_por_vertice, int max_aresta_por_vertice): Graph
+    '     - quantasArestasTeraOVertice( int min_aresta_por_vertice, int max_aresta_por_vertice): int
+    '     - qualAListaDeVerticesParaConectar(int qtd_arestas, int qtd_vertices): int[]
+    '     - existeNaLista(int[] v, int n): boolean
+    '
+}
 
 GraphMatrix <|-- Graph
 Graph o-- Aresta

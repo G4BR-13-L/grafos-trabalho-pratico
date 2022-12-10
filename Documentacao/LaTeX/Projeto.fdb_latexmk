@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1670634583 "/home/gabriel/Codes/Curso/grafos-trabalho-pratico/Documentacao/LaTeX/Projeto.tex" "Projeto.pdf" "Projeto" 1670634583
-  "/home/gabriel/Codes/Curso/grafos-trabalho-pratico/Documentacao/LaTeX/Projeto.tex" 1670633371 10271 21dfe5b0712e0ae4361ac8869eea80f5 ""
+["pdflatex"] 1670635020 "/home/gabriel/Codes/Curso/grafos-trabalho-pratico/Documentacao/LaTeX/Projeto.tex" "Projeto.pdf" "Projeto" 1670635020
+  "/home/gabriel/Codes/Curso/grafos-trabalho-pratico/Documentacao/LaTeX/Projeto.tex" 1670635019 10271 21dfe5b0712e0ae4361ac8869eea80f5 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1650183167 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1650183167 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -124,8 +124,8 @@
   "/usr/share/texmf-dist/tex/lualatex/plantuml/plantuml.sty" 1650183167 2905 bebe6305bb3b5b8eb1a083033b8be31e ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668035688 2927664 60f2598d1fca26fd61f05de9a0cafe44 ""
-  "Projeto.aux" 1670634583 32 3985256e7290058c681f74d7a3565a19 ""
-  "Projeto.tex" 1670633371 10271 21dfe5b0712e0ae4361ac8869eea80f5 ""
+  "Projeto.aux" 1670635020 32 3985256e7290058c681f74d7a3565a19 ""
+  "Projeto.tex" 1670635019 10271 21dfe5b0712e0ae4361ac8869eea80f5 ""
   "abnt_pucmg_utf8.cls" 1670107405 65271 723810e23a071bcba9a7ca4691c54bdb ""
   "abntcite.sty" 1670107405 40822 78d5b23d8a707791914f01e4fd96619f ""
   "abntex-abrev-pt_BR.def" 1670107405 1816 eb995afc0ded395cd2f3e9ad1d894468 ""
