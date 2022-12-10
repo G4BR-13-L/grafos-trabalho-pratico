@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.17)  9 DEC 2022 23:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.17)  9 DEC 2022 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1072,42 +1072,12 @@ Package pdftex.def Info: imagem/logo_puc.png  used on input line 193.
  [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./imagem/logo_puc.png>] [1]
-
-c:/Users/rubia/OneDrive - sga.pucminas.br/ATIVIDADES ENTREGUES/4º PERÍODO/TEORIA DOS GRAFOS E COMPUTABILIDADE/grafos-trabalho-pratico/Documentacao/LaTeX/Projeto.tex:275: LaTeX Error: No \title given.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.275 \maketitle
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 275.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 275.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 275.
-
-LaTeX Warning: No \author given.
-
-[1]
-No file Projeto.toc.
-\tf@toc=\write5
-\openout5 = `Projeto.toc'.
-
-[2
-
-]
 \openout2 = `texto/introducao.aux'.
 
  (./texto/introducao.tex
 Cap\'{\i }tulo 1.
 Package newfloat Info: Setting Plan B file extension to `loa'... on input line 1.
 ) [1
-
 
 
 ]
@@ -1128,14 +1098,11 @@ Underfull \vbox (badness 4492) has occurred while \output is active []
 
 
 ]
-<DiagramaDeClasse/DiagramaDeClasse.png, id=30, 490.83376pt x 632.3625pt>
+<DiagramaDeClasse/DiagramaDeClasse.png, id=23, 987.69pt x 1356.06625pt>
 File: DiagramaDeClasse/DiagramaDeClasse.png Graphic file (type png)
 <use DiagramaDeClasse/DiagramaDeClasse.png>
 Package pdftex.def Info: DiagramaDeClasse/DiagramaDeClasse.png  used on input line 41.
-(pdftex.def)             Requested size: 455.24411pt x 586.52791pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(pdftex.def)             Requested size: 455.24411pt x 625.01888pt.
  [3 <./DiagramaDeClasse/DiagramaDeClasse.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for TS1+aer on input line 79.
 LaTeX Font Info:    No file TS1aer.fd. on input line 79.
@@ -1168,18 +1135,18 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 24560 strings out of 474971
- 446181 string characters out of 5780120
+ 24533 strings out of 474971
+ 445845 string characters out of 5780120
  830603 words of memory out of 5000000
- 45503 multiletter control sequences out of 15000+600000
- 501178 words of font info for 104 fonts, out of 8000000 for 9000
+ 45481 multiletter control sequences out of 15000+600000
+ 496457 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,7n,104p,3449b,308s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,6n,104p,3449b,308s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Projeto.pdf (9 pages, 141252 bytes).
+Output written on Projeto.pdf (7 pages, 249207 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
