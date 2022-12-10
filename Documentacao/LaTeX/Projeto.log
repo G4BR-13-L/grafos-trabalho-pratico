@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.17)  9 DEC 2022 22:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.17)  9 DEC 2022 22:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1140,134 +1140,199 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-25.png, id=39, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-25.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-25.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-25.png  used on input line 90.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-25.png  used on input line 88.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-26.png, id=40, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-26.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-26.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-26.png  used on input line 94.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-26.png  used on input line 92.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 86--94
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-27.png, id=41, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-27.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-27.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-27.png  used on input line 100.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-27.png  used on input line 98.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-28.png, id=42, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-28.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-28.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-28.png  used on input line 104.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-28.png  used on input line 102.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 96--104
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-29.png, id=43, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-29.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-29.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-29.png  used on input line 110.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-29.png  used on input line 108.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-30.png, id=44, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-30.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-30.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-30.png  used on input line 114.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-30.png  used on input line 112.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 106--114
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-31.png, id=45, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-31.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-31.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-31.png  used on input line 120.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-31.png  used on input line 118.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-32.png, id=46, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-32.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-32.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-32.png  used on input line 124.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-32.png  used on input line 122.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 116--124
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-33.png, id=47, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-33.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-33.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-33.png  used on input line 130.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-33.png  used on input line 128.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-34.png, id=48, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-34.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-34.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-34.png  used on input line 134.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-34.png  used on input line 132.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 126--134
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-35.png, id=49, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-35.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-35.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-35.png  used on input line 140.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-35.png  used on input line 138.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-36.png, id=50, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-36.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-36.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-36.png  used on input line 144.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-36.png  used on input line 142.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 136--144
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-37.png, id=51, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-37.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-37.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-37.png  used on input line 150.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-37.png  used on input line 148.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-38.png, id=52, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-38.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-38.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-38.png  used on input line 154.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-38.png  used on input line 152.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 146--154
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-39.png, id=53, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-39.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-39.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-39.png  used on input line 160.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-39.png  used on input line 158.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-40.png, id=54, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-40.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-40.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-40.png  used on input line 164.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-40.png  used on input line 162.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 156--164
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-41.png, id=55, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-41.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-41.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-41.png  used on input line 170.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-41.png  used on input line 168.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-42.png, id=56, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-42.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-42.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-42.png  used on input line 174.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-42.png  used on input line 172.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 166--174
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-43.png, id=57, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-43.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-43.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-43.png  used on input line 180.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-43.png  used on input line 178.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-44.png, id=58, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-44.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-44.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-44.png  used on input line 184.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-44.png  used on input line 182.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 176--184
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-45.png, id=59, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-45.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-45.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-45.png  used on input line 190.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-45.png  used on input line 188.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-46.png, id=60, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-46.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-46.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-46.png  used on input line 194.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-46.png  used on input line 192.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 186--194
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-47.png, id=61, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-47.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-47.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-47.png  used on input line 200.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-47.png  used on input line 198.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-48.png, id=62, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-48.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-48.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-48.png  used on input line 204.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-48.png  used on input line 202.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 196--204
+[][] [] 
+ []
+
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-49.png, id=63, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-49.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-49.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-49.png  used on input line 210.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-49.png  used on input line 208.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
 <imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-50.png, id=64, 2007.5pt x 1129.21875pt>
 File: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-50.png Graphic file (type png)
 <use imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-50.png>
-Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-50.png  used on input line 214.
-(pdftex.def)             Requested size: 182.09486pt x 102.4179pt.
-) [5] [6 <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-25.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-26.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-27.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-28.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-29.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-30.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-31.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-32.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-33.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-34.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-35.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-36.png>] [7 <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-37.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-38.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-39.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-40.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-41.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-42.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-43.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-44.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-45.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-46.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-47.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-48.png>] [8 <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-49.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-50.png>]
+Package pdftex.def Info: imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-50.png  used on input line 212.
+(pdftex.def)             Requested size: 227.62206pt x 128.02237pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 206--214
+[][] [] 
+ []
+
+) [5] [6 <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-25.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-26.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-27.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-28.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-29.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-30.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-31.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-32.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-33.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-34.png>] [7 <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-35.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-36.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-37.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-38.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-39.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-40.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-41.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-42.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-43.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-44.png>] [8 <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-45.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-46.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-47.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-48.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-49.png> <./imagem/graficos/1a1455b7b9174768d1c6a0d41673e79dHTztESkzBtQzsXWu-50.png>]
 \openout2 = `texto/capEx1.aux'.
 
  (./texto/capEx1.tex
@@ -1378,7 +1443,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  100i,11n,104p,3449b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Projeto.pdf (16 pages, 2738800 bytes).
+Output written on Projeto.pdf (16 pages, 2738691 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream
