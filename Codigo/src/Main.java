@@ -125,13 +125,5 @@ public class Main {
         graph7.addAresta(1, 2);
         graph7.addAresta(2, 3);
         graph7.Fleury();
-
-
-
-
-
-        
-        
-
     }
 }
