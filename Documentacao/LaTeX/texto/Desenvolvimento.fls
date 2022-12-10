@@ -4,5 +4,3 @@ INPUT c:/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT c:/Users/rubia/OneDrive - sga.pucminas.br/ATIVIDADES ENTREGUES/4º PERÍODO/TEORIA DOS GRAFOS E COMPUTABILIDADE/grafos-trabalho-pratico/Documentacao/LaTeX/texto/Desenvolvimento.tex
 OUTPUT Desenvolvimento.log
-INPUT c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
