@@ -1,8 +1,15 @@
 # Fdb version 3
+<<<<<<< Updated upstream
 ["pdflatex"] 1670635501 "c:/Users/rubia/OneDrive - sga.pucminas.br/ATIVIDADES ENTREGUES/4º PERÍODO/TEORIA DOS GRAFOS E COMPUTABILIDADE/grafos-trabalho-pratico/Documentacao/LaTeX/texto/Desenvolvimento.tex" "Desenvolvimento.pdf" "Desenvolvimento" 1670635501
   "Desenvolvimento.aux" 1670635501 34 3985256e7290058c681f74d7a3565a19 ""
   "Desenvolvimento.tex" 1670635455 9065 c8b981993b5197d7e242be0ebf129aa3 ""
   "c:/Users/rubia/OneDrive - sga.pucminas.br/ATIVIDADES ENTREGUES/4º PERÍODO/TEORIA DOS GRAFOS E COMPUTABILIDADE/grafos-trabalho-pratico/Documentacao/LaTeX/texto/Desenvolvimento.tex" 1670635455 9065 c8b981993b5197d7e242be0ebf129aa3 ""
+=======
+["pdflatex"] 1670634196 "c:/Users/rubia/OneDrive - sga.pucminas.br/ATIVIDADES ENTREGUES/4º PERÍODO/TEORIA DOS GRAFOS E COMPUTABILIDADE/grafos-trabalho-pratico/Documentacao/LaTeX/texto/Desenvolvimento.tex" "Desenvolvimento.pdf" "Desenvolvimento" 1670634196
+  "Desenvolvimento.aux" 1670634196 34 3985256e7290058c681f74d7a3565a19 ""
+  "Desenvolvimento.tex" 1670634190 4799 6ebee960426fba897522a791110eaf43 ""
+  "c:/Users/rubia/OneDrive - sga.pucminas.br/ATIVIDADES ENTREGUES/4º PERÍODO/TEORIA DOS GRAFOS E COMPUTABILIDADE/grafos-trabalho-pratico/Documentacao/LaTeX/texto/Desenvolvimento.tex" 1670634190 4799 6ebee960426fba897522a791110eaf43 ""
+>>>>>>> Stashed changes
   "c:/texlive/2022/texmf-dist/web2c/texmf.cnf" 1668688454 40171 cdab547de63d26590bebb3baff566530 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1668708330 3063426 6e6b522b44f83709693290b48d377d47 ""
   "c:/texlive/2022/texmf.cnf" 1668708049 713 e69b156964470283e0530f5060668171 ""
