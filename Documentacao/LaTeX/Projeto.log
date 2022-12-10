@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  9 DEC 2022 22:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  9 DEC 2022 22:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -395,16 +395,7 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@expandcount=\count296
  (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (/usr/share/texmf-dist/tex/latex/aeguill/aeguill.sty
-Package: aeguill 2003/08/02 1.02 AE fonts with french guillemets (D. Roegel)
- (/usr/share/texmf-dist/tex/latex/ae/ae.sty
-Package: ae 2001/02/12 1.3 Almost European Computer Modern
- (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 112.
- (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)))) (./acronym.sty
+))) (./acronym.sty
 Package: acronym 2009/01/25 v1.34 Support for acronyms (Tobias Oetiker)
  (/usr/share/texmf-dist/tex/latex/bigfoot/suffix.sty
 Package: suffix 2006/07/15 1.5a Variant command support
@@ -438,159 +429,201 @@ Package: relsize 2013/03/29 ver 4.1
 LaTeX Info: Redefining \newblock on input line 562.
 LaTeX Info: Redefining \cite on input line 589.
 \ABCItoken=\toks33
-) (/usr/share/texmf-dist/tex/lualatex/plantuml/plantuml.sty
-Package: plantuml 2020/05/19 v0.3.1 Embed PlantUML diagrams in latex documents.
- (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2022/04/12 4.2 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count300
-\FV@InFile=\read3
-\FV@TabBox=\box106
-\c@FancyVerbLine=\count301
-\FV@StepNumber=\count302
-\FV@OutFile=\write4
-) (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-04-10 L3 programming layer (loader) 
- (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count303
-\l__pdf_internal_box=\box107
-))
-Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
-) (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-01-12 L3 Experimental document command parser
-) (/usr/share/texmf-dist/tex/latex/adjustbox/adjustbox.sty
-Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
- (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
- (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks34
-\XKV@tempa@toks=\toks35
-)
-\XKV@depth=\count304
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
-) (/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
-Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
- (/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
-Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box108
-)
-\tc@llx=\dimen267
-\tc@lly=\dimen268
-\tc@urx=\dimen269
-\tc@ury=\dimen270
-Package trimclip Info: Using driver 'tc-pdftex.def'.
- (/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
-File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
-))
-\adjbox@Width=\dimen271
-\adjbox@Height=\dimen272
-\adjbox@Depth=\dimen273
-\adjbox@Totalheight=\dimen274
-\adjbox@pwidth=\dimen275
-\adjbox@pheight=\dimen276
-\adjbox@pdepth=\dimen277
-\adjbox@ptotalheight=\dimen278
- (/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
-Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count305
-) (/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
-Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box109
-\sift@deathcycles=\count306
-\@vwid@loff=\dimen279
-\@vwid@roff=\dimen280
-))
-\c@PlantUmlFigureNumber=\count307
- (/usr/share/texmf-dist/tex/latex/pythontex/pythontex.sty
-Package: pythontex 2021/06/06 v0.18 execute and typeset Python code and other languages
- (/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
-Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
- (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count308
-) (/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
- (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)) (/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count309
-\output=\toks36
-\linenoprevgraf=\count310
-\linenumbersep=\dimen281
-\linenumberwidth=\dimen282
-\c@linenumber=\count311
-\c@pagewiselinenumber=\count312
-\c@LN@truepage=\count313
-\c@internallinenumber=\count314
-\c@internallinenumbers=\count315
-\quotelinenumbersep=\dimen283
-\bframerule=\dimen284
-\bframesep=\dimen285
-\bframebox=\box110
-LaTeX Info: Redefining \\ on input line 3056.
-)
-\c@FV@TrueTabGroupLevel=\count316
-\c@FV@TrueTabCounter=\count317
-\FV@TabBox@Group=\box111
-\FV@TmpLength=\skip63
-\c@FV@HighlightLinesStart=\count318
-\c@FV@HighlightLinesStop=\count319
-\FV@LoopCount=\count320
-\FV@NCharsBox=\box112
-\FV@BreakIndent=\dimen286
-\FV@BreakIndentNChars=\count321
-\FV@BreakSymbolSepLeft=\dimen287
-\FV@BreakSymbolSepLeftNChars=\count322
-\FV@BreakSymbolSepRight=\dimen288
-\FV@BreakSymbolSepRightNChars=\count323
-\FV@BreakSymbolIndentLeft=\dimen289
-\FV@BreakSymbolIndentLeftNChars=\count324
-\FV@BreakSymbolIndentRight=\dimen290
-\FV@BreakSymbolIndentRightNChars=\count325
-\c@FancyVerbLineBreakLast=\count326
-\FV@LineBox=\box113
-\FV@LineIndentBox=\box114
-\FV@LineWidth=\dimen291
-) (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count327
-\decimalpart=\count328
-)
-Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+) (./abnt-PPGInf-PUCMG.sty (./cvs-id.def)
+Package: abnt-PPGInf-PUCMG 2009/10/05 v0.1
+ (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count300
+\U@D=\dimen267
+\l@unhyphenated=\language87
+ (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count301
+ (/usr/share/texmf-dist/tex/generic/babel-portuges/brazil.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+(babel)             (\language70). Reported on input line 111.
+Package babel Info: Making " an active character on input line 143.
+)) (/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box106
+\UL@hyphenbox=\box107
+\UL@skip=\skip63
+\UL@hook=\toks34
+\UL@height=\dimen268
+\UL@pe=\count302
+\UL@pixel=\dimen269
+\ULC@box=\box108
+Package: ulem 2019/11/18
+\ULdepth=\dimen270
+)) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen271
+\captionmargin=\dimen272
+\caption@leftmargin=\dimen273
+\caption@rightmargin=\dimen274
+\caption@width=\dimen275
+\caption@indent=\dimen276
+\caption@parindent=\dimen277
+\caption@hangindent=\dimen278
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = macro:#1#2->\vskip \abovecaptionskip \sbox \@tempboxa {\small #1: #2}\ifdim \wd \@tempboxa >\hsize {\small #1: #2\par } \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa \hfil }\fi \vskip \belowcaptionskip  on input line 1176.
 )
 
-! LaTeX Error: File `pgfopts.sty' not found.
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count303
+\c@continuedfloat=\count304
+)
+\c@subfigure=\count305
+\c@subtable=\count306
+) (/usr/share/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip64
+\subfigcapskip=\skip65
+\subfigcaptopadj=\dimen279
+\subfigbottomskip=\skip66
+\subfigcapmargin=\dimen280
+\subfiglabelskip=\skip67
+
+
+/usr/share/texmf-dist/tex/latex/subfigure/subfigure.sty:113: LaTeX Error: Command \c@subfigure already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 \newcounter{subfigure}
+                            [figure]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texmf-dist/tex/latex/subfigure/subfigure.sty:123: LaTeX Error: Command \l@subfigure already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 ...xxxline{\ext@subfigure}{2}{3.8em}{2.5em}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@lofdepth=\count307
+
+/usr/share/texmf-dist/tex/latex/subfigure/subfigure.sty:126: LaTeX Error: Command \c@subtable already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 \newcounter{subtable}
+                           [table]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texmf-dist/tex/latex/subfigure/subfigure.sty:136: LaTeX Error: Command \l@subtable already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 ...dxxxline{\ext@subtable}{2}{3.8em}{2.5em}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@lotdepth=\count308
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+
+/usr/share/texmf-dist/tex/latex/subfigure/subfigure.sty:220: LaTeX Error: Command \subfigure already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220       {\@subfigure[\@empty]}}
+                                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\subfig@top=\skip68
+\subfig@bottom=\skip69
+
+/usr/share/texmf-dist/tex/latex/subfigure/subfigure.sty:413: LaTeX Error: Command \subref already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.413   \ref{sub@#1}}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count309
+\float@exts=\toks35
+\float@box=\box109
+\@float@everytoks=\toks36
+\@floatcapt=\box110
+) (/usr/share/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
+\FN@temptoken=\toks37
+\footnotemargin=\dimen281
+\@outputbox@depth=\dimen282
+Package footmisc Info: Declaring symbol style bringhurst on input line 695.
+Package footmisc Info: Declaring symbol style chicago on input line 703.
+Package footmisc Info: Declaring symbol style wiley on input line 712.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
+Package footmisc Info: Declaring symbol style lamport* on input line 743.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 764.
+)
+
+! LaTeX Error: File `xy.sty' not found.
 
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
 Enter file name: 
-/usr/share/texmf-dist/tex/latex/pythontex/pythontex.sty:31: Emergency stop.
+/home/gabriel/Codes/Curso/grafos-trabalho-pratico/Documentacao/LaTeX/Projeto.tex:64: Emergency stop.
 <read *> 
          
-l.31 \RequirePackage
-                    {newfloat}^^M
+l.64 \usepackage
+                {url,amsmath}	% Permite melhorias na codificação de fórmu...
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
- 16938 strings out of 478238
- 335182 string characters out of 5850456
- 596616 words of memory out of 5000000
- 34836 multiletter control sequences out of 15000+600000
- 473785 words of font info for 31 fonts, out of 8000000 for 9000
+ 16099 strings out of 478238
+ 318506 string characters out of 5850456
+ 599852 words of memory out of 5000000
+ 34057 multiletter control sequences out of 15000+600000
+ 470892 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,0n,104p,477b,96s stack positions out of 5000i,500n,10000p,200000b,80000s
-/usr/share/texmf-dist/tex/latex/pythontex/pythontex.sty:31:  ==> Fatal error occurred, no output PDF file produced!
+ 100i,0n,104p,457b,96s stack positions out of 5000i,500n,10000p,200000b,80000s
+/home/gabriel/Codes/Curso/grafos-trabalho-pratico/Documentacao/LaTeX/Projeto.tex:64:  ==> Fatal error occurred, no output PDF file produced!
