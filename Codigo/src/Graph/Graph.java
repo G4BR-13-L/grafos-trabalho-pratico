@@ -137,12 +137,19 @@ public class Graph extends GraphMatrix {
     /**
      * Adiciona uma aresta nova a partir da instancia de um ]
      * objeto aresta
+     * 
      * @param aresta
      */
-    public void addAresta(Aresta aresta){
-        this.addAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW);
-        this.ponderarAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW, aresta.peso);
-        super.addArestaNaMatriz(aresta.rotuloVerticeV, aresta.rotulo, aresta.peso);
+    public void addAresta(Aresta aresta) {
+        if (existeVertice(aresta.rotuloVerticeV) && existeVertice(aresta.rotuloVerticeW)) {
+            this.vertices.get(aresta.rotuloVerticeV).addAresta(this.vertices.get(aresta.rotuloVerticeW));
+            this.vertices.get(aresta.rotuloVerticeW).addAresta(this.vertices.get(aresta.rotuloVerticeV));
+            this.arestas.add(new Aresta(aresta.rotulo, aresta.rotuloVerticeV, aresta.rotuloVerticeW));
+            this.ponderarAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW, aresta.peso);
+            this.addArestaNaMatriz(aresta.rotuloVerticeV, aresta.rotulo, aresta.peso);
+        } else {
+            System.out.println("ERRO: A Aresta não pode ser inserida porque um dos vertices não existe");
+        }
     }
 
     /**
@@ -282,10 +289,11 @@ public class Graph extends GraphMatrix {
 
     /**
      * Retorna uma aresta de uma posição da lista de arestas.
+     * 
      * @param index
      * @return
      */
-    public Aresta getArestaFromList(int index){
+    public Aresta getArestaFromList(int index) {
         return this.arestas.get(index);
     }
 
@@ -369,45 +377,43 @@ public class Graph extends GraphMatrix {
         return str;
     }
 
-
-    //=========================================================================
-    //------------------------------ ENTREGA 2 --------------------------------
-    //=========================================================================
-
+    // =========================================================================
+    // ------------------------------ ENTREGA 2 --------------------------------
+    // =========================================================================
 
     /* -------------------------- BUSCA EM PROFUNDIDADE ------------------------- */
-    public void ExecutarBuscaEmProfundidade(boolean print_tabela){
+    public void ExecutarBuscaEmProfundidade(boolean print_tabela) {
         ExecutarBuscaEmProfundidade();
         System.out.println(this.tabela_busca_profundidade.toString());
     }
-    public void ExecutarBuscaEmProfundidade(){
-        while ( this.tabela_busca_profundidade.aindaHaVerticesParaExplorar() ){
+
+    public void ExecutarBuscaEmProfundidade() {
+        while (this.tabela_busca_profundidade.aindaHaVerticesParaExplorar()) {
             this.BuscaEmProfundidade(this.tabela_busca_profundidade.proximoVerticeAExplorar());
         }
     }
-    private void BuscaEmProfundidade( int v ){
+
+    private void BuscaEmProfundidade(int v) {
         this.tabela_busca_profundidade.T++;
         this.tabela_busca_profundidade.TD[v] = this.tabela_busca_profundidade.T;
-        for( int i = 0 ; i < this.vertices.get(v).arestas.size() ; i++ ){
+        for (int i = 0; i < this.vertices.get(v).arestas.size(); i++) {
             int w = this.vertices.get(v).arestas.get(i).rotulo;
-            if ( this.tabela_busca_profundidade.TD[w] == 0){
-                System.out.println("Visitando aresta { v: "+ v + " w: "+w+" }");
+            if (this.tabela_busca_profundidade.TD[w] == 0) {
+                System.out.println("Visitando aresta { v: " + v + " w: " + w + " }");
                 this.tabela_busca_profundidade.pai[w] = v;
                 this.BuscaEmProfundidade(w);
-            } else if ( 
-                this.tabela_busca_profundidade.TT[w] == 0 &&
-                 w != this.tabela_busca_profundidade.pai[v]){
-                    System.out.println("Visitando aresta { v: "+ v + " w: "+w+" }");
+            } else if (this.tabela_busca_profundidade.TT[w] == 0 &&
+                    w != this.tabela_busca_profundidade.pai[v]) {
+                System.out.println("Visitando aresta { v: " + v + " w: " + w + " }");
             }
             this.tabela_busca_profundidade.T++;
             this.tabela_busca_profundidade.TT[v] = this.tabela_busca_profundidade.T;
         }
     }
 
-
-
     /* --------------------- Busca Naive por ponte no Grafo --------------------- */
     public boolean ExecutarNaiveBridgeFind() {
+        this.tabela_busca_profundidade.zerarTabela(this.n_vertices);
         this.BuscaEmProfundidade(this.tabela_busca_profundidade.proximoVerticeAExplorar());
         if (this.tabela_busca_profundidade.aindaHaVerticesParaExplorar()) {
             return false;
@@ -421,8 +427,6 @@ public class Graph extends GraphMatrix {
             this.rmAresta(aresta.rotuloVerticeV, aresta.rotuloVerticeW);
             if (ExecutarNaiveBridgeFind()) {
                 System.out.println("Ponte Encontrada: \n" + aresta.toString());
-                this.addAresta(aresta);
-                return;
             }
             this.addAresta(aresta);
         }

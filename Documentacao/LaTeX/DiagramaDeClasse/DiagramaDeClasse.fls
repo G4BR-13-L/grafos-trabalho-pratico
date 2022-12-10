@@ -1,0 +1,11 @@
+PWD /home/gabriel/Codes/Curso/grafos-trabalho-pratico/Documentacao/LaTeX/DiagramaDeClasse
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/gabriel/Codes/Curso/grafos-trabalho-pratico/Documentacao/LaTeX/DiagramaDeClasse/DiagramaDeClasse.tex
+OUTPUT DiagramaDeClasse.log
+INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
