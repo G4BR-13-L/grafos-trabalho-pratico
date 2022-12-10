@@ -30,6 +30,9 @@ public class Graph extends GraphMatrix {
         this.GerarListaDeAdjacencia();
         this.arestas = new ArrayList<>();
         this.tabela_busca_profundidade = new Tabela(n_vertices);
+
+        // Iniciando lista de Adjacência Fleury
+        initGraph();
     }
 
     /**
@@ -412,6 +415,7 @@ public class Graph extends GraphMatrix {
     }
 
     /* --------------------- Busca Naive por ponte no Grafo --------------------- */
+
     public boolean ExecutarNaiveBridgeFind() {
         this.tabela_busca_profundidade.zerarTabela(this.n_vertices);
         this.BuscaEmProfundidade(this.tabela_busca_profundidade.proximoVerticeAExplorar());
@@ -429,6 +433,70 @@ public class Graph extends GraphMatrix {
                 System.out.println("Ponte Encontrada: \n" + aresta.toString());
             }
             this.addAresta(aresta);
+        }
+    }
+
+
+
+    
+    // Fleury
+
+    public boolean tresOuMaisVerticesDeGrauImpar() {
+        int verticesGrauImpar = 0;
+        for (int i = 0; i < this.vertices.size(); i++) {
+            if (this.vertices.get(i).arestas.size() % 2 != 0) {
+                verticesGrauImpar++;
+            }
+            if (verticesGrauImpar > 2) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void Fleury() {
+        if (tresOuMaisVerticesDeGrauImpar()) {
+            System.out.println("Erro - Fleury não pode ser executado por ter 3 ou mais vértices de grau ímpar");
+            return;
+        }
+
+        System.out.println(this.toString());
+
+        Graph grafo = new Graph(this.getQuantidadeVertices());
+
+        grafo.vertices = this.vertices;
+        grafo.arestas = this.arestas;
+        grafo.matrix = this.matrix;
+        grafo.tabela_busca_profundidade = this.tabela_busca_profundidade;
+        grafo.matrix_peso_vertices = this.matrix_peso_vertices;
+
+        System.out.println(grafo.toString());
+        int v = getVerticeGrauImpar();
+        while (grafo.arestas.size() != 0) {
+            if (v > 1) {
+
+            }
+        }
+
+    }
+
+    public int getVerticeGrauImpar() {
+        for (int i = 0; i < this.vertices.size(); i++) {
+            if (this.vertices.get(i).arestas.size() % 2 != 0) {
+                return i;
+            }
+        }
+        return 0;
+    }
+
+    public ArrayList<Integer>[] adj;
+
+    @SuppressWarnings("unchecked")
+    public void initGraph() {
+        adj = new ArrayList[n_vertices];
+
+        for (int i = 0; i < n_vertices; i++) {
+            adj[i] = new ArrayList<>();
         }
     }
 
