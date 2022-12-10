@@ -14,6 +14,7 @@ public class Graph extends GraphMatrix {
     public int ROTULOS_ARESTA = 0;
 
     public Tabela tabela_busca_profundidade;
+    public Tabela tabela_busca_Tarjan;
 
     /**
      * Construtor padrão que cria um grafo em estrutura de lista
@@ -30,6 +31,7 @@ public class Graph extends GraphMatrix {
         this.GerarListaDeAdjacencia();
         this.arestas = new ArrayList<>();
         this.tabela_busca_profundidade = new Tabela(n_vertices);
+        this.tabela_busca_Tarjan = new Tabela(n_vertices);
 
         // Iniciando lista de Adjacência Fleury
         initGraph();
@@ -436,10 +438,45 @@ public class Graph extends GraphMatrix {
         }
     }
 
+    /* --------------------- Busca por pontes pelo método de Tarjan --------------------- */
 
+    public void executarBuscarPontes() {
+        for (int i = 0; i < this.vertices.size(); i++) {
+          if (this.tabela_busca_Tarjan.TD[i] == 0) {
+            this.BuscarPontes(this.vertices.get(i).rotulo);
+          }
+        }
+    }
 
     
-    // Fleury
+    private void BuscarPontes(int v) {
+        this.tabela_busca_Tarjan.T++;
+        this.tabela_busca_Tarjan.TD[v] = this.tabela_busca_Tarjan.T;
+        this.tabela_busca_Tarjan.low[v] = this.tabela_busca_Tarjan.T;
+
+        for (int i = 0; i < this.vertices.get(v).arestas.size(); i++) {
+        int w = this.vertices.get(v).arestas.get(i).rotulo;
+        if (this.tabela_busca_Tarjan.TD[w] == 0) {
+            System.out.println("Visitando aresta { v: " + v + " w: " + w + " }");
+            this.tabela_busca_Tarjan.pai[w] = v;
+            this.BuscarPontes(w);
+
+            this.tabela_busca_Tarjan.low[v] = Math.min(this.tabela_busca_Tarjan.low[v], this.tabela_busca_Tarjan.low[w]);
+
+            if (this.tabela_busca_Tarjan.TD[v] < this.tabela_busca_Tarjan.low[w]) {
+            System.out.println("\nPonte encontrada: { v: " + v + " w: " + w + " }\n");
+            }
+        } else if (this.tabela_busca_Tarjan.TT[w] == 0 &&
+            w != this.tabela_busca_Tarjan.pai[v]) {
+            System.out.println("Visitando aresta { v: " + v + " w: " + w + " }");
+        }
+        this.tabela_busca_Tarjan.T++;
+        this.tabela_busca_Tarjan.TT[v] = this.tabela_busca_Tarjan.T;
+        }
+    }
+
+    
+    /* --------------------- Método de Fleury --------------------- */
 
     public boolean tresOuMaisVerticesDeGrauImpar() {
         int verticesGrauImpar = 0;

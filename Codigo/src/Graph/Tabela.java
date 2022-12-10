@@ -8,7 +8,6 @@ public class Tabela {
     public int[] low;
     public int[] pai;
     public boolean isCompleta;
-    public boolean[] visitados;
     public int n_vertices;
 
     public Tabela(int vertices) {
@@ -19,7 +18,6 @@ public class Tabela {
         this.isCompleta = false;
         this.n_vertices = vertices;
         this.low = new int[n_vertices];
-        this.visitados = new boolean[n_vertices];
         this.zerarTabela(vertices);
     }
 
@@ -28,7 +26,6 @@ public class Tabela {
             TD[i] = 0;
             TT[i] = 0;
             pai[i] = 0;
-            visitados[i] = false;
         }
     }
 
